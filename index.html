@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036" type="text/javascript"></script>
+    <title>Главная</title>
+</head>
+
+
+<body class="m-page">
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__top">
+                    <div class="header__mob">
+                        <a href="" class="header__logo">
+                            <img class="_view1" src="img/logo.svg" alt="">
+                            <img class="_view2" src="img/logo2.svg" alt="">
+                        </a>
+                        <button class="burger _toggle-menu">
+                            <img src="img/burger.svg" alt="">
+                        </button>
+                    </div>
+
+
+                    <div class="header-contacts">
+                        <div class="header-contacts__address">
+                            <span class="header-contacts__address-icon">
+                    <img class="_view1" src="img/marker.svg" alt="">
+                    <img class="_view2" src="img/marker2.svg" alt="">
+                </span>
+                            <span class="header-contacts__address-title text16">Город:</span>
+                            <span class="header-contacts__address-city text14" data-modal="cityModal">Железногорск-Илимский</span>
+                        </div>
+                        <div class="header-contacts__phone">
+                            <span class="header-contacts__phone-icon">
+                    <img src="img/phone.svg" alt="">
+                </span>
+                            <div class="header-contacts__phone-content">
+                                <a href="" class="header-contacts__phone-tel text24">
+                                    8 (3952) 19-94-54
+                                </a>
+                                <button class="header-contacts__phone-btn text14">
+                                    Заказать обратный звонок
+                                </button>
+                            </div>
+                        </div>
+                        <div class="socials">
+                            <div class="socials__title text16">Мы на связи:</div>
+                            <div class="socials__items">
+                                <a href="" class="socials__item">
+                                    <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.5" width="36" height="36" rx="18" fill="#158F44" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.7747 24.4497H19.0299C19.0299 24.4497 19.4089 24.4078 19.6028 24.199C19.7809 24.007 19.7752 23.6467 19.7752 23.6467C19.7752 23.6467 19.7507 21.9597 20.5322 21.7113C21.303 21.4664 22.2925 23.3417 23.3412 24.0628C24.1343 24.6083 24.737 24.4889 24.737 24.4889L27.5414 24.4497C27.5414 24.4497 29.0084 24.359 28.3128 23.2037C28.2559 23.1093 27.9076 22.3491 26.2275 20.7871C24.4689 19.1523 24.7047 19.4168 26.8229 16.5889C28.1129 14.8667 28.6286 13.8154 28.4674 13.3651C28.3139 12.9361 27.365 13.0494 27.365 13.0494L24.2074 13.069C24.2074 13.069 23.9732 13.0371 23.7997 13.1411C23.63 13.2428 23.521 13.4804 23.521 13.4804C23.521 13.4804 23.0211 14.8129 22.3548 15.9464C20.9488 18.3378 20.3865 18.4644 20.1566 18.3157C19.6219 17.9695 19.7555 16.9255 19.7555 16.1835C19.7555 13.8659 20.1065 12.8996 19.0721 12.6495C18.7289 12.5665 18.4761 12.5116 17.5983 12.5027C16.4715 12.4912 15.5181 12.5061 14.9781 12.7711C14.6189 12.9473 14.3417 13.3399 14.5106 13.3624C14.7194 13.3903 15.1919 13.4902 15.4425 13.8317C15.7661 14.2728 15.7548 15.2629 15.7548 15.2629C15.7548 15.2629 15.9408 17.9911 15.3206 18.3299C14.895 18.5623 14.3111 18.0878 13.0576 15.9182C12.4154 14.8069 11.9304 13.5783 11.9304 13.5783C11.9304 13.5783 11.837 13.3487 11.6702 13.2259C11.4678 13.077 11.1851 13.0298 11.1851 13.0298L8.18447 13.0494C8.18447 13.0494 7.73412 13.062 7.56863 13.2582C7.4214 13.4329 7.55687 13.7937 7.55687 13.7937C7.55687 13.7937 9.9059 19.2986 12.566 22.0728C15.0053 24.6166 17.7747 24.4497 17.7747 24.4497Z" fill="white" />
+                                    </svg>
+                                </a>
+                                <a href="" class="socials__item">
+                                    <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.5" width="36" height="36" rx="18" fill="#158F44" />
+                                        <path d="M18 8C15.5147 8 13.5 10.0147 13.5 12.4999C13.5 14.9852 15.5147 17 18 17C20.4853 17 22.5 14.9852 22.5 12.4999C22.5 10.0147 20.4853 8 18 8ZM18 14.3602C16.9727 14.3602 16.1398 13.5273 16.1398 12.5C16.1398 11.4726 16.9727 10.6398 18 10.6398C19.0273 10.6398 19.8602 11.4726 19.8602 12.5C19.8602 13.5273 19.0273 14.3602 18 14.3602Z" fill="white" />
+                                        <path d="M19.9714 22.0226C22.1083 21.4874 23.3888 20.2433 23.4566 20.1765C24.0819 19.56 24.1823 18.437 23.6808 17.6681C23.1794 16.8994 22.2661 16.7759 21.6406 17.3923C21.6274 17.4054 20.2616 18.6935 18.0144 18.6954C15.7673 18.6935 14.3726 17.4054 14.3594 17.3923C13.7339 16.7759 12.8206 16.8994 12.3192 17.6681C11.8177 18.437 11.9181 19.56 12.5434 20.1765C12.6121 20.2442 13.9455 21.5208 16.1423 22.0434L13.0807 25.9772C12.5243 26.6866 12.541 27.8161 13.118 28.5002C13.3996 28.8341 13.7626 29 14.1253 29C14.5056 29 14.8854 28.8173 15.1702 28.4542L18.0145 24.7292L21.146 28.4783C21.7134 29.1748 22.6322 29.1736 23.1985 28.4763C23.7649 27.779 23.7642 26.6492 23.1969 25.9529L19.9714 22.0226Z" fill="white" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="menu">
+                    <button class="menu__close _toggle-menu">
+                        <img src="img/burger2.svg" alt="">
+                    </button>
+                    <nav class="nav">
+                        <a href="" class="nav__link"><span>Преимущества займа</span></a>
+                        <a href="" class="nav__link"><span>Условия займа</span></a>
+                        <a href="" class="nav__link"><span>Как получить займ</span></a>
+                        <a href="" class="nav__link"><span>О компании</span></a>
+                        <a href="" class="nav__link"><span>Контакты</span></a>
+                        <a href="" class="nav__link"><span>Оплата займа</span></a>
+                    </nav>
+                    <button class="menu__btn m-btn m-btn-green">
+                        <span>Обратный звонок</span>
+                    </button>
+
+                    <div class="menu-contacts">
+                        <div class="header-contacts__phone">
+                            <span class="header-contacts__phone-icon">
+                    <img src="img/phone.svg" alt="">
+                </span>
+                            <div class="header-contacts__phone-content">
+                                <a href="" class="header-contacts__phone-tel text24">
+                                    8 (3952) 19-94-54
+                                </a>
+                                <button class="header-contacts__phone-btn text14">
+                                    Заказать обратный звонок
+                                </button>
+                            </div>
+                        </div>
+                        <div class="socials">
+                            <div class="socials__title text16">Мы на связи:</div>
+                            <div class="socials__items">
+                                <a href="" class="socials__item">
+                                    <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.5" width="36" height="36" rx="18" fill="#158F44" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.7747 24.4497H19.0299C19.0299 24.4497 19.4089 24.4078 19.6028 24.199C19.7809 24.007 19.7752 23.6467 19.7752 23.6467C19.7752 23.6467 19.7507 21.9597 20.5322 21.7113C21.303 21.4664 22.2925 23.3417 23.3412 24.0628C24.1343 24.6083 24.737 24.4889 24.737 24.4889L27.5414 24.4497C27.5414 24.4497 29.0084 24.359 28.3128 23.2037C28.2559 23.1093 27.9076 22.3491 26.2275 20.7871C24.4689 19.1523 24.7047 19.4168 26.8229 16.5889C28.1129 14.8667 28.6286 13.8154 28.4674 13.3651C28.3139 12.9361 27.365 13.0494 27.365 13.0494L24.2074 13.069C24.2074 13.069 23.9732 13.0371 23.7997 13.1411C23.63 13.2428 23.521 13.4804 23.521 13.4804C23.521 13.4804 23.0211 14.8129 22.3548 15.9464C20.9488 18.3378 20.3865 18.4644 20.1566 18.3157C19.6219 17.9695 19.7555 16.9255 19.7555 16.1835C19.7555 13.8659 20.1065 12.8996 19.0721 12.6495C18.7289 12.5665 18.4761 12.5116 17.5983 12.5027C16.4715 12.4912 15.5181 12.5061 14.9781 12.7711C14.6189 12.9473 14.3417 13.3399 14.5106 13.3624C14.7194 13.3903 15.1919 13.4902 15.4425 13.8317C15.7661 14.2728 15.7548 15.2629 15.7548 15.2629C15.7548 15.2629 15.9408 17.9911 15.3206 18.3299C14.895 18.5623 14.3111 18.0878 13.0576 15.9182C12.4154 14.8069 11.9304 13.5783 11.9304 13.5783C11.9304 13.5783 11.837 13.3487 11.6702 13.2259C11.4678 13.077 11.1851 13.0298 11.1851 13.0298L8.18447 13.0494C8.18447 13.0494 7.73412 13.062 7.56863 13.2582C7.4214 13.4329 7.55687 13.7937 7.55687 13.7937C7.55687 13.7937 9.9059 19.2986 12.566 22.0728C15.0053 24.6166 17.7747 24.4497 17.7747 24.4497Z" fill="white" />
+                                    </svg>
+                                </a>
+                                <a href="" class="socials__item">
+                                    <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="0.5" width="36" height="36" rx="18" fill="#158F44" />
+                                        <path d="M18 8C15.5147 8 13.5 10.0147 13.5 12.4999C13.5 14.9852 15.5147 17 18 17C20.4853 17 22.5 14.9852 22.5 12.4999C22.5 10.0147 20.4853 8 18 8ZM18 14.3602C16.9727 14.3602 16.1398 13.5273 16.1398 12.5C16.1398 11.4726 16.9727 10.6398 18 10.6398C19.0273 10.6398 19.8602 11.4726 19.8602 12.5C19.8602 13.5273 19.0273 14.3602 18 14.3602Z" fill="white" />
+                                        <path d="M19.9714 22.0226C22.1083 21.4874 23.3888 20.2433 23.4566 20.1765C24.0819 19.56 24.1823 18.437 23.6808 17.6681C23.1794 16.8994 22.2661 16.7759 21.6406 17.3923C21.6274 17.4054 20.2616 18.6935 18.0144 18.6954C15.7673 18.6935 14.3726 17.4054 14.3594 17.3923C13.7339 16.7759 12.8206 16.8994 12.3192 17.6681C11.8177 18.437 11.9181 19.56 12.5434 20.1765C12.6121 20.2442 13.9455 21.5208 16.1423 22.0434L13.0807 25.9772C12.5243 26.6866 12.541 27.8161 13.118 28.5002C13.3996 28.8341 13.7626 29 14.1253 29C14.5056 29 14.8854 28.8173 15.1702 28.4542L18.0145 24.7292L21.146 28.4783C21.7134 29.1748 22.6322 29.1736 23.1985 28.4763C23.7649 27.779 23.7642 26.6492 23.1969 25.9529L19.9714 22.0226Z" fill="white" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="menu__bg _toggle-menu"></div>
+            </div>
+
+        </header>
+        <main class="content">
+
+            <div class="main">
+                <div class="container">
+                    <div class="main__content">
+                        <h1 class="h1">
+                            ЗАЙМ ПО ПРОГРАММЕ <span>МАТЕРИНСКИЙ КАПИТАЛ</span>
+                        </h1>
+                        <div class="main__desc">
+                            <div class="text40 text24-tablet">на покупку или строительство жилья</div>
+                        </div>
+                        <div class="main__items">
+                            <div class="main__item">
+                                <div class="text24">
+                                    сумма <br>
+                    до <b>899 000 рублей</b>
+                                </div>
+                            </div>
+                            <div class="main__item">
+                                <div class="text24">
+                                    деньги <b>в день обращения</b>
+                                </div>
+                            </div>
+                            <div class="main__item">
+                                <div class="text24">
+                                    не дожидаясь <br>
+                                    <b>3х-летия ребёнка</b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__nav">
+                            <button class="main__btn m-btn m-btn-green">
+                                <span>Отправить заявку</span>
+                            </button>
+                            <button class="main__btn m-btn m-btn-green-outline">
+                                <span>Рассчитать сумму займа</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__img">
+                    <img class="_view1" src="img/main-img.webp" alt="">
+                    <img class="_view2" src="img/main-img2.webp" alt="">
+                </div>
+
+            </div>
+
+            <div class="calc">
+                <div class="container">
+                    <div class="h2">
+                        <span>Рассчитайте</span> сумму займа и узнайте шанс одобрения
+                    </div>
+
+                    <form class="calc__wrap">
+                        <div class="calc-progress">
+                            <div data-step="1" class="calc-progress__item _filled">
+                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M40 77C35.1411 77 30.3298 76.043 25.8407 74.1835C21.3517 72.3241 17.2728 69.5987 13.837 66.1629C10.4013 62.7272 7.67588 58.6483 5.81646 54.1593C3.95703 49.6702 3 44.8589 3 40C3 35.1411 3.95703 30.3298 5.81646 25.8407C7.67588 21.3517 10.4013 17.2728 13.8371 13.837C17.2728 10.4013 21.3517 7.67588 25.8407 5.81645C30.3298 3.95703 35.1411 3 40 3C44.8589 3 49.6702 3.95704 54.1593 5.81646C58.6483 7.67589 62.7272 10.4013 66.163 13.8371C69.5987 17.2728 72.3241 21.3517 74.1835 25.8407C76.043 30.3298 77 35.1411 77 40C77 44.8589 76.043 49.6703 74.1835 54.1593C72.3241 58.6483 69.5987 62.7272 66.1629 66.163C62.7272 69.5987 58.6483 72.3241 54.1593 74.1835C49.6702 76.043 44.8589 77 40 77L40 77Z" stroke="white" stroke-width="6" />
+                                    <path class="_fill" d="M40 77C35.1411 77 30.3298 76.043 25.8407 74.1835C21.3517 72.3241 17.2728 69.5987 13.837 66.1629C10.4013 62.7272 7.67588 58.6483 5.81646 54.1593C3.95703 49.6702 3 44.8589 3 40" stroke="#D9DBDE" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <div class="calc-progress__num text16 extra-bold-text">
+                                    25%
+                                </div>
+                            </div>
+                            <div data-step="2" class="calc-progress__item">
+                                <svg width="80" height="81" viewBox="0 0 80 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M40 77.3333C35.1411 77.3333 30.3298 76.3762 25.8407 74.5168C21.3517 72.6574 17.2728 69.932 13.837 66.4962C10.4013 63.0604 7.67588 58.9816 5.81646 54.4925C3.95703 50.0035 3 45.1922 3 40.3332C3 35.4743 3.95703 30.663 5.81646 26.174C7.67588 21.6849 10.4013 17.6061 13.8371 14.1703C17.2728 10.7345 21.3517 8.00913 25.8407 6.14971C30.3298 4.29028 35.1411 3.33325 40 3.33325C44.8589 3.33325 49.6702 4.29029 54.1593 6.14971C58.6483 8.00914 62.7272 10.7345 66.163 14.1703C69.5987 17.6061 72.3241 21.6849 74.1835 26.174C76.043 30.663 77 35.4744 77 40.3333C77 45.1922 76.043 50.0035 74.1835 54.4925C72.3241 58.9816 69.5987 63.0604 66.1629 66.4962C62.7272 69.932 58.6483 72.6574 54.1593 74.5168C49.6702 76.3762 44.8589 77.3333 40 77.3333L40 77.3333Z" stroke="white" stroke-width="6" />
+                                    <path class="_fill" d="M40 77.3333C30.187 77.3333 20.7759 73.435 13.837 66.4962C6.8982 59.5574 3 50.1463 3 40.3333C3 30.5202 6.8982 21.1091 13.837 14.1703C20.7759 7.23145 30.187 3.33325 40 3.33325" stroke="#D9DBDE" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <div class="calc-progress__num text16 extra-bold-text">
+                                    50%
+                                </div>
+                            </div>
+                            <div data-step="3" class="calc-progress__item">
+                                <svg width="80" height="81" viewBox="0 0 80 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M40 77.6667C35.1411 77.6667 30.3298 76.7097 25.8407 74.8503C21.3517 72.9909 17.2728 70.2655 13.837 66.8297C10.4013 63.3939 7.67588 59.3151 5.81646 54.826C3.95703 50.337 3 45.5257 3 40.6667C3 35.8078 3.95703 30.9965 5.81646 26.5075C7.67588 22.0184 10.4013 17.9396 13.8371 14.5038C17.2728 11.068 21.3517 8.34263 25.8407 6.4832C30.3298 4.62378 35.1411 3.66675 40 3.66675C44.8589 3.66675 49.6702 4.62378 54.1593 6.48321C58.6483 8.34263 62.7272 11.068 66.163 14.5038C69.5987 17.9396 72.3241 22.0184 74.1835 26.5075C76.043 30.9965 77 35.8078 77 40.6668C77 45.5257 76.043 50.337 74.1835 54.826C72.3241 59.3151 69.5987 63.3939 66.1629 66.8297C62.7272 70.2655 58.6483 72.9909 54.1593 74.8503C49.6702 76.7097 44.8589 77.6667 40 77.6667L40 77.6667Z" stroke="white" stroke-width="6" />
+                                    <path class="_fill" d="M40 77.6667C32.6821 77.6667 25.5285 75.4967 19.4439 71.4311C13.3593 67.3655 8.6169 61.5869 5.81646 54.826C3.01601 48.0652 2.28329 40.6257 3.71095 33.4484C5.1386 26.2711 8.66251 19.6783 13.8371 14.5038C19.0116 9.32925 25.6044 5.80534 32.7817 4.37769C39.959 2.95004 47.3984 3.68276 54.1593 6.48321C60.9202 9.28365 66.6988 14.026 70.7644 20.1107C74.83 26.1953 77 33.3488 77 40.6668" stroke="#D9DBDE" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <div class="calc-progress__num text16 extra-bold-text">
+                                    75%
+                                </div>
+                            </div>
+                            <div data-step="4" class="calc-progress__item">
+                                <svg width="80" height="81" viewBox="0 0 80 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="_fill" d="M40 77.3333C35.1411 77.3333 30.3298 76.3762 25.8407 74.5168C21.3517 72.6574 17.2728 69.932 13.837 66.4962C10.4013 63.0604 7.67588 58.9816 5.81646 54.4925C3.95703 50.0035 3 45.1922 3 40.3332C3 35.4743 3.95703 30.663 5.81646 26.174C7.67588 21.6849 10.4013 17.6061 13.8371 14.1703C17.2728 10.7345 21.3517 8.00913 25.8407 6.14971C30.3298 4.29028 35.1411 3.33325 40 3.33325C44.8589 3.33325 49.6702 4.29029 54.1593 6.14971C58.6483 8.00914 62.7272 10.7345 66.163 14.1703C69.5987 17.6061 72.3241 21.6849 74.1835 26.174C76.043 30.663 77 35.4744 77 40.3333C77 45.1922 76.043 50.0035 74.1835 54.4925C72.3241 58.9816 69.5987 63.0604 66.1629 66.4962C62.7272 69.932 58.6483 72.6574 54.1593 74.5168C49.6702 76.3762 44.8589 77.3333 40 77.3333L40 77.3333Z" stroke="#D9DBDE" stroke-width="6" />
+                                </svg>
+                                <div class="calc-progress__num text16 extra-bold-text">
+                                    100%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calc__steps">
+                            <div class="calc-step _active" data-step="1">
+                                <div class="calc-step__top">
+                                    <div class="calc-step__num h3"><span>Шаг 1</span></div>
+                                    <div class="h3">Выберите ближайший к вам город или посёлок</div>
+                                </div>
+                                <div class="calc-cities">
+                                    <div class="fg">
+                                        <input class="_city-field" type="text" placeholder="Введите название города">
+                                    </div>
+                                    <div class="calc-cities__items">
+                                        <div class="calc-cities__item"><span>Ангарск</span></div>
+                                        <div class="calc-cities__item"><span>Нижнеудинск</span></div>
+                                        <div class="calc-cities__item"><span>Тулун</span></div>
+                                        <div class="calc-cities__item"><span>Черемхово</span></div>
+                                        <div class="calc-cities__item"><span>Братск</span></div>
+                                        <div class="calc-cities__item"><span>Саянск</span></div>
+                                        <div class="calc-cities__item"><span>Улан-Удэ</span></div>
+                                        <div class="calc-cities__item"><span>Шелехов</span></div>
+                                        <div class="calc-cities__item"><span>Вихоревка</span></div>
+                                        <div class="calc-cities__item"><span>Свирск</span></div>
+                                        <div class="calc-cities__item"><span>Усолье-Сибирское</span></div>
+                                        <div class="calc-cities__item"><span>Хомутово</span></div>
+                                        <div class="calc-cities__item"><span>Железногорск-Илимский</span></div>
+                                        <div class="calc-cities__item"><span>Слюдянка</span></div>
+                                        <div class="calc-cities__item"><span>Усть-Илимск</span></div>
+                                        <div class="calc-cities__item"><span>Качуг</span></div>
+                                        <div class="calc-cities__item"><span>Залари</span></div>
+                                        <div class="calc-cities__item"><span>Тайшет</span></div>
+                                        <div class="calc-cities__item"><span>Усть-Ордынский</span></div>
+                                    </div>
+                                </div>
+                                <div class="calc-step__nav">
+                                    <button type="button" disabled class="_got-to-step2 m-btn m-btn-green">
+                                        <span>Следующий шаг</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="calc-step" data-step="2">
+                                <div class="calc-step__top">
+                                    <div class="calc-step__num h3"><span>Шаг 2</span></div>
+                                    <div class="h3">Какой сертификат у вас есть?</div>
+                                </div>
+                                <div class="calc-step__desc">
+                                    <div class="text16 text14-tablet gray-text">Вы можете выбрать несколько вариантов</div>
+                                </div>
+                                <div class="calc-certificates">
+                                    <div class="m-check">
+                                        <input type="checkbox" name="certificates" data-name="certificates" data-value="100000">
+                                        <label><span>Материнский капитал на первого ребёнка</span></label>
+                                    </div>
+                                    <div class="m-check">
+                                        <input type="checkbox" name="certificates" data-name="certificates" data-value="100000">
+                                        <label><span>Материнский капитал на второго и последующего ребёнка</span></label>
+                                    </div>
+                                    <div class="m-check">
+                                        <input type="checkbox" name="certificates" data-name="certificates" data-value="100000">
+                                        <label><span>Региональный материнский капитал</span></label>
+                                    </div>
+                                    <div class="m-check">
+                                        <input type="checkbox" name="certificates" data-name="certificates" data-value="100000">
+                                        <label><span>Господдержка на третьего ребёнка</span></label>
+                                    </div>
+                                    <div class="m-check">
+                                        <input type="checkbox" name="certificates" data-name="certificates" data-value="100000">
+                                        <label><span>У меня несколько сертификатов</span></label>
+                                    </div>
+                                    <div class="m-check">
+                                        <input type="checkbox" name="certificates" data-name="certificates" data-value="100000">
+                                        <label><span>Сертификата пока нет</span></label>
+                                    </div>
+                                </div>
+                                <div class="calc-step__nav">
+                                    <button type="button" class="_got-to-step1 m-btn m-btn-green-outline">
+                                        <span>Назад</span>
+                                    </button>
+                                    <button type="button" disabled class="_got-to-step3 m-btn m-btn-green">
+                                        <span>Следующий шаг</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="calc-step" data-step="3">
+                                <div class="calc-step__top">
+                                    <div class="calc-step__num h3"><span>Шаг 3</span></div>
+                                    <div class="h3">На что вы планируете потратить материнский капитал?</div>
+                                </div>
+                                <div class="calc-step__desc">
+                                    <div class="text16 text14-tablet gray-text">Вы можете выбрать только 1 вариант</div>
+                                </div>
+                                <div class="calc-certificates">
+                                    <div class="m-radio">
+                                        <input type="radio" name="useFor" data-name="useFor">
+                                        <label><span>На покупку квартиры</span></label>
+                                    </div>
+                                    <div class="m-radio">
+                                        <input type="radio" name="useFor" data-name="useFor">
+                                        <label><span>На участие в долевом строительстве</span></label>
+                                    </div>
+                                    <div class="m-radio">
+                                        <input type="radio" name="useFor" data-name="useFor">
+                                        <label><span>На покупку жилого дома</span></label>
+                                    </div>
+                                    <div class="m-radio">
+                                        <input type="radio" name="useFor" data-name="useFor">
+                                        <label><span>На строительство жилого дома</span></label>
+                                    </div>
+                                    <div class="m-radio">
+                                        <input type="radio" name="useFor" data-name="useFor">
+                                        <label><span>На покупку комнаты в коммунальной квартире или общежитии</span></label>
+                                    </div>
+                                    <div class="m-radio">
+                                        <input type="radio" name="useFor" data-name="useFor">
+                                        <label><span>На выкуп доли в квартире до полного объекта</span></label>
+                                    </div>
+                                </div>
+                                <div class="calc-step__nav">
+                                    <button type="button" class="_got-to-step3 m-btn m-btn-green-outline">
+                                        <span>Назад</span>
+                                    </button>
+                                    <button type="button" disabled class="_got-to-step4 m-btn m-btn-green">
+                                        <span>Следующий шаг</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="calc-step" data-step="4">
+                                <div class="calc-step__top">
+                                    <div class="calc-step__num h3"><span>Шаг 4</span></div>
+                                    <div class="h3">
+                                        Вам одобрен займ <br>
+                    на сумму <span class="_sum">899 000 рублей</span>
+                                    </div>
+                                </div>
+                                <div class="calc-step__grid grid2">
+                                    <div class="calc-form">
+                                        <div class="text30 text18-tablet medium-text">
+                                            Оставьте заявку на займ
+                                        </div>
+                                        <div class="calc-form__fields">
+                                            <div class="fg">
+                                                <input type="text" placeholder="Ваше имя">
+                                            </div>
+                                            <div class="fg">
+                                                <input type="tel" placeholder="Номер телефона">
+                                            </div>
+                                        </div>
+                                        <div class="m-check _small">
+                                            <input type="checkbox">
+                                            <label><span>Нажимая на кнопку «Отправить заявку», я соглашаюсь на обработку персональных данных и согласен с Политикой конфиденциальности и Лицензией</span></label>
+                                        </div>
+                                        <button type="submit" class="calc-form__btn m-btn m-btn-green">
+                                            <span>Отправить заявку</span>
+                                        </button>
+                                    </div>
+                                    <div class="calc-info">
+                                        <div class="calc-info__grid grid2">
+                                            <div class="info-card">
+                                                <img src="img/info-icon.svg" alt="" class="info-card__icon">
+                                                <div class="info-card__text">
+                                                    <div class="info-card__title text18 medium-text">Все сделки под контролем юриста</div>
+                                                    <div class="info-card__desc text14">Также как базовый вектор развития позволяет выполнить важные задания по разработке системы массового участия.</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="info-card">
+                                                <img src="img/info-icon2.svg" alt="" class="info-card__icon">
+                                                <div class="info-card__text">
+                                                    <div class="info-card__title text18 medium-text">Все бумажные работы мы берём на себя</div>
+                                                    <div class="info-card__desc text14">Также как базовый вектор развития позволяет выполнить важные задания.</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <button type="button" class="_got-to-step3 calc-info__btn m-btn m-btn-green-outline">
+                                            <span>Назад</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="credit">
+                <div class="container">
+                    <div class="credit__top">
+                        <div class="h2">
+                            <span>Займ по программе</span> «Материнский капитал за первенца»
+                        </div>
+                    </div>
+                    <div class="credit__grid">
+                        <div class="credit-card">
+                            <img src="img/credit-icon.svg" alt="" class="credit-card__icon">
+                            <div class="text30 text24-tablet bold-text">
+                                Материнский капитал за первого ребёнка
+                            </div>
+                            <div class="credit-card__content">
+                                <div class="credit-card__text">можно получить, если ребёнок родился или был усыновлён после  1 января 2020 года.</div>
+                                <div class="credit-card__text">Сумма выплаты</div>
+                                <div class="credit-card__num">
+                                    586 946 рублей 72 копейки.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="credit-card">
+                            <img src="img/credit-icon2.svg" alt="" class="credit-card__icon">
+                            <div class="text30 text24-tablet bold-text">
+                                КПК «ГоСотделение» предлагает
+                            </div>
+                            <div class="credit-card__content">
+                                <div class="credit-card__text">
+                                    вам оформить целевой займ на покупку или строительство жилья. Справки о доходах и поручители
+                                    не нужны. Наши юристы помогут
+                                    на всех этапах, ответят на любые вопросы по предстоящей сделке.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="credit-card">
+                            <img src="img/credit-icon3.svg" alt="" class="credit-card__icon">
+                            <div class="text30 text24-tablet bold-text">
+                                Узнайте больше
+                                о программе
+                            </div>
+                            <div class="credit-card__content">
+                                <div class="credit-card__text">
+                                    «Материнский капитал за первенца» по телефону горячей линии
+                                </div>
+                                <br>
+                                <div class="credit-card__num">
+                                    <a href="tel:88005100800 ">
+                                        8-800-5-100-800
+                                    </a>
+                                </div>
+                                <div class="credit-card__text">
+                                    или <button>оставьте заявку</button>
+                                    <br>
+                    на обратный звонок.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="about">
+                <div class="container">
+                    <div class="h2">Займ по программе материнский капитал - это:</div>
+                    <div class="about__grid">
+                        <div class="about__col">
+                            <div class="about__items">
+                                <div class="about-item">
+                                    <div class="about-item__title text24 bold-text">
+                                        Возможность получить жилье уже сейчас
+                                    </div>
+                                    <div class="about-item__desc text16">
+                                        Законное получение денежных средств за 5-7 дней.
+                                    </div>
+                                </div>
+
+                                <div class="about-item">
+                                    <div class="about-item__title text24 bold-text">
+                                        Бесплатное юридическое сопровождение
+                                    </div>
+                                    <div class="about-item__desc text16">
+                                        Юристы сопровождают сделку купли-продажи комнаты, квартиры или дома, проводят консультационную и разъяснительную работу.
+                                    </div>
+                                </div>
+
+                                <div class="about-item">
+                                    <div class="about-item__title text24 bold-text">
+                                        Прозрачные условия
+                                    </div>
+                                    <div class="about-item__desc text16">
+                                        Индивидуальный подход, фиксированный процент.
+                                    </div>
+                                </div>
+
+                                <div class="about-item">
+                                    <div class="about-item__title text24 bold-text">
+                                        Погашение
+                                    </div>
+                                    <div class="about-item__desc text16">
+                                        Займ на жилье по программе материнский капитал предоставляется сроком до 12 месяцев. Досрочное погашение возможно за период не менее 45 дней.
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="about__col">
+                            <form action="" class="feedback-form ">
+                                <div class="text30 text22-tablet bold-text">
+                                    Получите консультацию <br>
+        о мат. капитале сейчас!
+                                </div>
+                                <div class="feedback-form__fields">
+                                    <div class="fg">
+                                        <input type="text" placeholder="Ваше имя">
+                                    </div>
+                                    <div class="fg">
+                                        <input type="tel" placeholder="Номер телефона">
+                                    </div>
+                                    <div class="fg">
+                                        <select>
+                                            <!--                            <option selected disabled hidden>Выберите город</option>-->
+                                            <option selected>Ангарск</option>
+                                            <option>Братск</option>
+                                            <option>Вихоревка</option>
+                                            <option>Железногорск-Илимский</option>
+                                            <option>Залари</option>
+                                            <option>Нижнеудинск</option>
+                                            <option>Саянск</option>
+                                            <option>Свирск</option>
+                                            <option>Слюдянка</option>
+                                            <option>Тайшет</option>
+                                            <option>Тулун</option>
+                                            <option>Улан-Удэ</option>
+                                            <option>Усолье-Сибирское</option>
+                                            <option>Усть-Илимск</option>
+                                            <option>Усть-Ордынский</option>
+                                            <option>Черемхово</option>
+                                            <option>Шелехов</option>
+                                            <option>Хомутово</option>
+                                            <option>Качуг</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="m-check _small">
+                                    <input type="checkbox">
+                                    <label><span>Нажимая на кнопку «Отправить заявку», я соглашаюсь на обработку персональных данных и согласен с Политикой конфиденциальности и Лицензией</span></label>
+                                </div>
+                                <button type="submit" class="calc-form__btn m-btn m-btn-green">
+                                    <span>Отправить заявку</span>
+                                </button>
+
+                                <div class="success-form">
+                                    <img src="img/check3.svg" alt="" class="success-form__check">
+                                    <div class="success-form__text">
+                                        <div class="text30 text22-tablet">Спасибо, ваша заявка получена, мы позвоним вам в рабочее время.</div>
+                                        <div class="text30 text22-tablet">Мы работаем с <span>9:00 до 19:00</span></div>
+                                    </div>
+                                    <div class="socials">
+                                        <div class="socials__title">
+                                            А пока можете посмотреть
+                                            наши соц. сети
+                                        </div>
+                                        <div class="socials__items">
+                                            <a href="" class="socials__item">
+                                                <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect y="0.5" width="36" height="36" rx="18" fill="#158F44"></rect>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.7747 24.4497H19.0299C19.0299 24.4497 19.4089 24.4078 19.6028 24.199C19.7809 24.007 19.7752 23.6467 19.7752 23.6467C19.7752 23.6467 19.7507 21.9597 20.5322 21.7113C21.303 21.4664 22.2925 23.3417 23.3412 24.0628C24.1343 24.6083 24.737 24.4889 24.737 24.4889L27.5414 24.4497C27.5414 24.4497 29.0084 24.359 28.3128 23.2037C28.2559 23.1093 27.9076 22.3491 26.2275 20.7871C24.4689 19.1523 24.7047 19.4168 26.8229 16.5889C28.1129 14.8667 28.6286 13.8154 28.4674 13.3651C28.3139 12.9361 27.365 13.0494 27.365 13.0494L24.2074 13.069C24.2074 13.069 23.9732 13.0371 23.7997 13.1411C23.63 13.2428 23.521 13.4804 23.521 13.4804C23.521 13.4804 23.0211 14.8129 22.3548 15.9464C20.9488 18.3378 20.3865 18.4644 20.1566 18.3157C19.6219 17.9695 19.7555 16.9255 19.7555 16.1835C19.7555 13.8659 20.1065 12.8996 19.0721 12.6495C18.7289 12.5665 18.4761 12.5116 17.5983 12.5027C16.4715 12.4912 15.5181 12.5061 14.9781 12.7711C14.6189 12.9473 14.3417 13.3399 14.5106 13.3624C14.7194 13.3903 15.1919 13.4902 15.4425 13.8317C15.7661 14.2728 15.7548 15.2629 15.7548 15.2629C15.7548 15.2629 15.9408 17.9911 15.3206 18.3299C14.895 18.5623 14.3111 18.0878 13.0576 15.9182C12.4154 14.8069 11.9304 13.5783 11.9304 13.5783C11.9304 13.5783 11.837 13.3487 11.6702 13.2259C11.4678 13.077 11.1851 13.0298 11.1851 13.0298L8.18447 13.0494C8.18447 13.0494 7.73412 13.062 7.56863 13.2582C7.4214 13.4329 7.55687 13.7937 7.55687 13.7937C7.55687 13.7937 9.9059 19.2986 12.566 22.0728C15.0053 24.6166 17.7747 24.4497 17.7747 24.4497Z" fill="white"></path>
+                                                </svg>
+                                            </a>
+                                            <a href="" class="socials__item">
+                                                <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect y="0.5" width="36" height="36" rx="18" fill="#158F44"></rect>
+                                                    <path d="M18 8C15.5147 8 13.5 10.0147 13.5 12.4999C13.5 14.9852 15.5147 17 18 17C20.4853 17 22.5 14.9852 22.5 12.4999C22.5 10.0147 20.4853 8 18 8ZM18 14.3602C16.9727 14.3602 16.1398 13.5273 16.1398 12.5C16.1398 11.4726 16.9727 10.6398 18 10.6398C19.0273 10.6398 19.8602 11.4726 19.8602 12.5C19.8602 13.5273 19.0273 14.3602 18 14.3602Z" fill="white"></path>
+                                                    <path d="M19.9714 22.0226C22.1083 21.4874 23.3888 20.2433 23.4566 20.1765C24.0819 19.56 24.1823 18.437 23.6808 17.6681C23.1794 16.8994 22.2661 16.7759 21.6406 17.3923C21.6274 17.4054 20.2616 18.6935 18.0144 18.6954C15.7673 18.6935 14.3726 17.4054 14.3594 17.3923C13.7339 16.7759 12.8206 16.8994 12.3192 17.6681C11.8177 18.437 11.9181 19.56 12.5434 20.1765C12.6121 20.2442 13.9455 21.5208 16.1423 22.0434L13.0807 25.9772C12.5243 26.6866 12.541 27.8161 13.118 28.5002C13.3996 28.8341 13.7626 29 14.1253 29C14.5056 29 14.8854 28.8173 15.1702 28.4542L18.0145 24.7292L21.146 28.4783C21.7134 29.1748 22.6322 29.1736 23.1985 28.4763C23.7649 27.779 23.7642 26.6492 23.1969 25.9529L19.9714 22.0226Z" fill="white"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="stat">
+                        <div class="stat__top">
+                            <div class="h2">
+                                В 2022 году свыше 3372 семей получили займы
+                                в КПК "ГоСотделение"
+                            </div>
+                        </div>
+                        <div class="stat__grid">
+                            <div class="stat-card">
+                                <div class="stat-card__title h1 gradient-text">14 лет</div>
+                                <div class="stat-card__desc">
+                                    <div class="text30">Успешной работы</div>
+                                </div>
+                            </div>
+
+                            <div class="stat-card">
+                                <div class="stat-card__title h1 gradient-text">95%</div>
+                                <div class="stat-card__desc">
+                                    <div class="text30">Обратившихся получают помощь</div>
+                                </div>
+                            </div>
+
+                            <div class="stat-card">
+                                <div class="stat-card__title h1 gradient-text">38</div>
+                                <div class="stat-card__desc">
+                                    <div class="text30">Отделений <br> по всей России</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="how-get">
+                <div class="container">
+                    <div class="how-get__top">
+                        <div class="h2">
+                            <span>Как получить займ</span> по программе материнский капитал быстро
+                        </div>
+                    </div>
+                    <div class="how-get__grid">
+                        <div class="how-card ">
+                            <div class="how-card__num h1 gradient-text">1</div>
+                            <div class="how-card__text">
+                                <div class="how-card__title text24 text20-tablet bold-text">
+                                    Оставить заявку
+                                </div>
+                                <div class="how-card__desc text16">
+                                    вы можете на нашем сайте или по номеру телефона: <a href="" class="extra-bold-text green-text">+7 (3952) 19-95-61</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="how-card ">
+                            <div class="how-card__num h1 gradient-text">2</div>
+                            <div class="how-card__text">
+                                <div class="how-card__title text24 text20-tablet bold-text">
+                                    Собрать документы
+                                </div>
+                                <div class="how-card__desc text16">
+                                    необходимый пакет документов. Список можно скачать <a href="">здесь</a>.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="how-card ">
+                            <div class="how-card__num h1 gradient-text">3</div>
+                            <div class="how-card__text">
+                                <div class="how-card__title text24 text20-tablet bold-text">
+                                    Получить решение
+                                </div>
+                                <div class="how-card__desc text16">
+                                    получить решение по займу, вы можете  в срок от 1 дня
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="how-card _big">
+                            <div class="how-card__num h1 gradient-text">4</div>
+                            <div class="how-card__text">
+                                <div class="how-card__title text24 text20-tablet bold-text">
+                                    Оформить сделку
+                                </div>
+                                <div class="how-card__desc text16">
+                                    купли-продажи (залога) в Росреестре через МФЦ. Через 5-7 дней получить займ по программе материнский капитал.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="how-card _big _big2">
+                            <div class="how-card__num h1 gradient-text">5</div>
+                            <div class="how-card__text">
+                                <div class="how-card__title text24 text20-tablet bold-text">
+                                    Подать документы
+                                </div>
+                                <div class="how-card__desc text16">
+                                    в Пенсионный Фонд и/или Соцзащиту. Через 2-3 месяца займ автоматически погашается.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <section class="reviews">
+                <div class="container">
+                    <h2 class="h2">
+                        <span>Отзывы</span> наших клиентов
+                    </h2>
+                    <div class="reviews-slider slider">
+                        <div class="reviews-slider__wrap">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="review-card">
+                                            <div class="review-card__top">
+                                                <div class="review-card__num">
+                                                    <span>4,6</span>
+                                                </div>
+                                                <div class="review-card__name text24 text18-tablet bold-text">
+                                                    Константинова. Е.В
+                                                </div>
+                                            </div>
+                                            <div class="review-card__text">
+                                                <div class="text16 text14-tablet lh140 light-text">
+                                                    Посещал данную организацию, так вышло, что нужны были срочно деньги, когда пришел мне все грамотно объяснили, оценили машину на высшем уровне все как полагается, приборы все имеются у них! Ну и после оценки предложили выпит чаю, кофе пока я ожидал окончания решения и оценки. Вообщем все устроило , все понравилось буду советовать друзьям и приеду в случае чп еще раз к ним.
+                                                </div>
+                                            </div>
+                                            <div class="review-card__site">
+                                                <div class="text16 medium-text">
+                                                    Источник:
+                                                </div>
+                                                <a href="" class="review-card__site-img">
+                                                    <img src="img/site.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="review-card">
+                                            <div class="review-card__top">
+                                                <div class="review-card__num">
+                                                    <span>4,9</span>
+                                                </div>
+                                                <div class="review-card__name text24 text18-tablet bold-text">
+                                                    Олег
+                                                </div>
+                                            </div>
+                                            <div class="review-card__text">
+                                                <div class="text16 text14-tablet lh140 light-text">
+                                                    Недавно срочно понадобилась крупная сумма для покупки выгодной недвижимости. Свободных средств не имелось. Обратился в Кредео. За один день удалось получить деньги под залог птс автомобиля, хотя машине уже 5 лет и была в ремонте. Никаких справок собирать не пришлось! Спасибо сотрудникам за оперативное содействие.
+                                                </div>
+                                            </div>
+                                            <div class="review-card__site">
+                                                <div class="text16 medium-text">
+                                                    Источник:
+                                                </div>
+                                                <a href="" class="review-card__site-img">
+                                                    <img src="img/site2.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="review-card">
+                                            <div class="review-card__top">
+                                                <div class="review-card__num">
+                                                    <span>4,6</span>
+                                                </div>
+                                                <div class="review-card__name text24 text18-tablet bold-text">
+                                                    Герман Глебов
+                                                </div>
+                                            </div>
+                                            <div class="review-card__text">
+                                                <div class="text16 text14-tablet lh140 light-text">
+                                                    Друг посоветовал компанию. Он уже обращался раз, деньги получил быстро. Вот и мне на прошлой недели потребовались деньги. Деньги под ПТС предоставили в тот же день. Никаких сложностей не было. Компании не важна кредитная история. Помогают быстро, я доволен их работой. Сроки возврата также устраивают.
+                                                </div>
+                                            </div>
+                                            <div class="review-card__site">
+                                                <div class="text16 medium-text">
+                                                    Источник:
+                                                </div>
+                                                <a href="" class="review-card__site-img">
+                                                    <img src="img/site.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="review-card">
+                                            <div class="review-card__top">
+                                                <div class="review-card__num">
+                                                    <span>4,9</span>
+                                                </div>
+                                                <div class="review-card__name text24 text18-tablet bold-text">
+                                                    Олег
+                                                </div>
+                                            </div>
+                                            <div class="review-card__text">
+                                                <div class="text16 text14-tablet lh140 light-text">
+                                                    Недавно срочно понадобилась крупная сумма для покупки выгодной недвижимости. Свободных средств не имелось. Обратился в Кредео. За один день удалось получить деньги под залог птс автомобиля, хотя машине уже 5 лет и была в ремонте. Никаких справок собирать не пришлось! Спасибо сотрудникам за оперативное содействие.
+                                                </div>
+                                            </div>
+                                            <div class="review-card__site">
+                                                <div class="text16 medium-text">
+                                                    Источник:
+                                                </div>
+                                                <a href="" class="review-card__site-img">
+                                                    <img src="img/site2.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="review-card">
+                                            <div class="review-card__top">
+                                                <div class="review-card__num">
+                                                    <span>4,6</span>
+                                                </div>
+                                                <div class="review-card__name text24 text18-tablet bold-text">
+                                                    Герман Глебов
+                                                </div>
+                                            </div>
+                                            <div class="review-card__text">
+                                                <div class="text16 text14-tablet lh140 light-text">
+                                                    Друг посоветовал компанию. Он уже обращался раз, деньги получил быстро. Вот и мне на прошлой недели потребовались деньги. Деньги под ПТС предоставили в тот же день. Никаких сложностей не было. Компании не важна кредитная история. Помогают быстро, я доволен их работой. Сроки возврата также устраивают.
+                                                </div>
+                                            </div>
+                                            <div class="review-card__site">
+                                                <div class="text16 medium-text">
+                                                    Источник:
+                                                </div>
+                                                <a href="" class="review-card__site-img">
+                                                    <img src="img/site.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-nav">
+                            <div class="swiper-button swiper-button-prev">
+                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.2309 12.9998L16.0659 9.16484C16.2677 8.96187 16.3809 8.68729 16.3809 8.40109C16.3809 8.11489 16.2677 7.84032 16.0659 7.63734C15.9652 7.5358 15.8454 7.45521 15.7133 7.40021C15.5813 7.34521 15.4397 7.31689 15.2967 7.31689C15.1537 7.31689 15.0121 7.34521 14.8801 7.40021C14.7481 7.45521 14.6283 7.5358 14.5276 7.63734L9.93422 12.2307C9.83268 12.3314 9.75209 12.4512 9.69709 12.5832C9.64209 12.7152 9.61377 12.8568 9.61377 12.9998C9.61377 13.1429 9.64209 13.2845 9.69709 13.4165C9.75209 13.5485 9.83268 13.6683 9.93422 13.769L14.5276 18.4165C14.6288 18.5169 14.7488 18.5963 14.8808 18.6503C15.0128 18.7042 15.1541 18.7315 15.2967 18.7307C15.4393 18.7315 15.5806 18.7042 15.7126 18.6503C15.8446 18.5963 15.9647 18.5169 16.0659 18.4165C16.2677 18.2135 16.3809 17.939 16.3809 17.6528C16.3809 17.3666 16.2677 17.092 16.0659 16.889L12.2309 12.9998Z" fill="#231F20" />
+                                </svg>
+                            </div>
+                            <div class="swiper-button swiper-button-next">
+                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.0658 12.2307L11.4725 7.63734C11.3718 7.5358 11.252 7.45521 11.12 7.40021C10.9879 7.34521 10.8463 7.31689 10.7033 7.31689C10.5603 7.31689 10.4187 7.34521 10.2867 7.40021C10.1547 7.45521 10.0349 7.5358 9.93417 7.63734C9.73239 7.84032 9.61914 8.11489 9.61914 8.40109C9.61914 8.68729 9.73239 8.96187 9.93417 9.16484L13.7692 12.9998L9.93417 16.8348C9.73239 17.0378 9.61914 17.3124 9.61914 17.5986C9.61914 17.8848 9.73239 18.1594 9.93417 18.3623C10.0354 18.4627 10.1554 18.5422 10.2874 18.5961C10.4194 18.65 10.5608 18.6773 10.7033 18.6765C10.8459 18.6773 10.9872 18.65 11.1192 18.5961C11.2512 18.5422 11.3713 18.4627 11.4725 18.3623L16.0658 13.769C16.1674 13.6683 16.248 13.5485 16.303 13.4165C16.358 13.2845 16.3863 13.1429 16.3863 12.9998C16.3863 12.8568 16.358 12.7152 16.303 12.5832C16.248 12.4512 16.1674 12.3314 16.0658 12.2307Z" fill="#231F20" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="faq">
+                <div class="container">
+                    <h2 class="h2">
+                        <span>Вопросы</span> и ответы
+                    </h2>
+                    <div class="faq__items">
+                        <div class="qa-card">
+                            <div class="qa-card__show">
+                                <div class="qa-card__title text24 text18-tablet">
+                                    Какую сумму можно получить?
+                                </div>
+                                <button class="qa-card__btn">
+                                    <svg class="_view1" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.5835 11.9168H14.0835V5.41683C14.0835 5.12951 13.9694 4.85396 13.7662 4.6508C13.563 4.44763 13.2875 4.3335 13.0002 4.3335C12.7128 4.3335 12.4373 4.44763 12.2341 4.6508C12.031 4.85396 11.9168 5.12951 11.9168 5.41683V11.9168H5.41683C5.12951 11.9168 4.85396 12.031 4.6508 12.2341C4.44763 12.4373 4.3335 12.7128 4.3335 13.0002C4.3335 13.2875 4.44763 13.563 4.6508 13.7662C4.85396 13.9694 5.12951 14.0835 5.41683 14.0835H11.9168V20.5835C11.9168 20.8708 12.031 21.1464 12.2341 21.3495C12.4373 21.5527 12.7128 21.6668 13.0002 21.6668C13.2875 21.6668 13.563 21.5527 13.7662 21.3495C13.9694 21.1464 14.0835 20.8708 14.0835 20.5835V14.0835H20.5835C20.8708 14.0835 21.1464 13.9694 21.3495 13.7662C21.5527 13.563 21.6668 13.2875 21.6668 13.0002C21.6668 12.7128 21.5527 12.4373 21.3495 12.2341C21.1464 12.031 20.8708 11.9168 20.5835 11.9168Z" fill="#231F20" />
+                                    </svg>
+                                    <svg class="_view2" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.5835 11.9165H5.41683C5.12951 11.9165 4.85396 12.0306 4.6508 12.2338C4.44763 12.437 4.3335 12.7125 4.3335 12.9998C4.3335 13.2872 4.44763 13.5627 4.6508 13.7659C4.85396 13.969 5.12951 14.0832 5.41683 14.0832H20.5835C20.8708 14.0832 21.1464 13.969 21.3495 13.7659C21.5527 13.5627 21.6668 13.2872 21.6668 12.9998C21.6668 12.7125 21.5527 12.437 21.3495 12.2338C21.1464 12.0306 20.8708 11.9165 20.5835 11.9165Z" fill="#158F44" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="qa-card__hidden">
+                                <div class="qa-card__text">
+                                    Все граждане иностранцы, достигшие 21 года и имеющие разрешение на временное проживание в Москве и области, могут взять заем под залог авто! Мы предлагаем выгодные условия. Ведь наша основная цель — помочь трудовым мигрантам и иностранным гражданам, имеющим миграционный патент, адаптироваться на новом месте. Заполните форму на сайте и наш менеджер проконсультирует вас по этому вопросу.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="qa-card">
+                            <div class="qa-card__show">
+                                <div class="qa-card__title text24 text18-tablet">
+                                    Какие документы нужны для оформления?
+                                </div>
+                                <button class="qa-card__btn">
+                                    <svg class="_view1" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.5835 11.9168H14.0835V5.41683C14.0835 5.12951 13.9694 4.85396 13.7662 4.6508C13.563 4.44763 13.2875 4.3335 13.0002 4.3335C12.7128 4.3335 12.4373 4.44763 12.2341 4.6508C12.031 4.85396 11.9168 5.12951 11.9168 5.41683V11.9168H5.41683C5.12951 11.9168 4.85396 12.031 4.6508 12.2341C4.44763 12.4373 4.3335 12.7128 4.3335 13.0002C4.3335 13.2875 4.44763 13.563 4.6508 13.7662C4.85396 13.9694 5.12951 14.0835 5.41683 14.0835H11.9168V20.5835C11.9168 20.8708 12.031 21.1464 12.2341 21.3495C12.4373 21.5527 12.7128 21.6668 13.0002 21.6668C13.2875 21.6668 13.563 21.5527 13.7662 21.3495C13.9694 21.1464 14.0835 20.8708 14.0835 20.5835V14.0835H20.5835C20.8708 14.0835 21.1464 13.9694 21.3495 13.7662C21.5527 13.563 21.6668 13.2875 21.6668 13.0002C21.6668 12.7128 21.5527 12.4373 21.3495 12.2341C21.1464 12.031 20.8708 11.9168 20.5835 11.9168Z" fill="#231F20" />
+                                    </svg>
+                                    <svg class="_view2" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.5835 11.9165H5.41683C5.12951 11.9165 4.85396 12.0306 4.6508 12.2338C4.44763 12.437 4.3335 12.7125 4.3335 12.9998C4.3335 13.2872 4.44763 13.5627 4.6508 13.7659C4.85396 13.969 5.12951 14.0832 5.41683 14.0832H20.5835C20.8708 14.0832 21.1464 13.969 21.3495 13.7659C21.5527 13.5627 21.6668 13.2872 21.6668 12.9998C21.6668 12.7125 21.5527 12.437 21.3495 12.2338C21.1464 12.0306 20.8708 11.9165 20.5835 11.9165Z" fill="#158F44" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="qa-card__hidden">
+                                <div class="qa-card__text">
+                                    Все граждане иностранцы, достигшие 21 года и имеющие разрешение на временное проживание в Москве и области, могут взять заем под залог авто! Мы предлагаем выгодные условия. Ведь наша основная цель — помочь трудовым мигрантам и иностранным гражданам, имеющим миграционный патент, адаптироваться на новом месте. Заполните форму на сайте и наш менеджер проконсультирует вас по этому вопросу.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="qa-card">
+                            <div class="qa-card__show">
+                                <div class="qa-card__title text24 text18-tablet">
+                                    Как быстро я могу получить деньги?
+                                </div>
+                                <button class="qa-card__btn">
+                                    <svg class="_view1" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.5835 11.9168H14.0835V5.41683C14.0835 5.12951 13.9694 4.85396 13.7662 4.6508C13.563 4.44763 13.2875 4.3335 13.0002 4.3335C12.7128 4.3335 12.4373 4.44763 12.2341 4.6508C12.031 4.85396 11.9168 5.12951 11.9168 5.41683V11.9168H5.41683C5.12951 11.9168 4.85396 12.031 4.6508 12.2341C4.44763 12.4373 4.3335 12.7128 4.3335 13.0002C4.3335 13.2875 4.44763 13.563 4.6508 13.7662C4.85396 13.9694 5.12951 14.0835 5.41683 14.0835H11.9168V20.5835C11.9168 20.8708 12.031 21.1464 12.2341 21.3495C12.4373 21.5527 12.7128 21.6668 13.0002 21.6668C13.2875 21.6668 13.563 21.5527 13.7662 21.3495C13.9694 21.1464 14.0835 20.8708 14.0835 20.5835V14.0835H20.5835C20.8708 14.0835 21.1464 13.9694 21.3495 13.7662C21.5527 13.563 21.6668 13.2875 21.6668 13.0002C21.6668 12.7128 21.5527 12.4373 21.3495 12.2341C21.1464 12.031 20.8708 11.9168 20.5835 11.9168Z" fill="#231F20" />
+                                    </svg>
+                                    <svg class="_view2" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.5835 11.9165H5.41683C5.12951 11.9165 4.85396 12.0306 4.6508 12.2338C4.44763 12.437 4.3335 12.7125 4.3335 12.9998C4.3335 13.2872 4.44763 13.5627 4.6508 13.7659C4.85396 13.969 5.12951 14.0832 5.41683 14.0832H20.5835C20.8708 14.0832 21.1464 13.969 21.3495 13.7659C21.5527 13.5627 21.6668 13.2872 21.6668 12.9998C21.6668 12.7125 21.5527 12.437 21.3495 12.2338C21.1464 12.0306 20.8708 11.9165 20.5835 11.9165Z" fill="#158F44" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="qa-card__hidden">
+                                <div class="qa-card__text">
+                                    Все граждане иностранцы, достигшие 21 года и имеющие разрешение на временное проживание в Москве и области, могут взять заем под залог авто! Мы предлагаем выгодные условия. Ведь наша основная цель — помочь трудовым мигрантам и иностранным гражданам, имеющим миграционный патент, адаптироваться на новом месте. Заполните форму на сайте и наш менеджер проконсультирует вас по этому вопросу.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="qa-card">
+                            <div class="qa-card__show">
+                                <div class="qa-card__title text24 text18-tablet">
+                                    На каких условиях я могу получить деньги?
+                                </div>
+                                <button class="qa-card__btn">
+                                    <svg class="_view1" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.5835 11.9168H14.0835V5.41683C14.0835 5.12951 13.9694 4.85396 13.7662 4.6508C13.563 4.44763 13.2875 4.3335 13.0002 4.3335C12.7128 4.3335 12.4373 4.44763 12.2341 4.6508C12.031 4.85396 11.9168 5.12951 11.9168 5.41683V11.9168H5.41683C5.12951 11.9168 4.85396 12.031 4.6508 12.2341C4.44763 12.4373 4.3335 12.7128 4.3335 13.0002C4.3335 13.2875 4.44763 13.563 4.6508 13.7662C4.85396 13.9694 5.12951 14.0835 5.41683 14.0835H11.9168V20.5835C11.9168 20.8708 12.031 21.1464 12.2341 21.3495C12.4373 21.5527 12.7128 21.6668 13.0002 21.6668C13.2875 21.6668 13.563 21.5527 13.7662 21.3495C13.9694 21.1464 14.0835 20.8708 14.0835 20.5835V14.0835H20.5835C20.8708 14.0835 21.1464 13.9694 21.3495 13.7662C21.5527 13.563 21.6668 13.2875 21.6668 13.0002C21.6668 12.7128 21.5527 12.4373 21.3495 12.2341C21.1464 12.031 20.8708 11.9168 20.5835 11.9168Z" fill="#231F20" />
+                                    </svg>
+                                    <svg class="_view2" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.5835 11.9165H5.41683C5.12951 11.9165 4.85396 12.0306 4.6508 12.2338C4.44763 12.437 4.3335 12.7125 4.3335 12.9998C4.3335 13.2872 4.44763 13.5627 4.6508 13.7659C4.85396 13.969 5.12951 14.0832 5.41683 14.0832H20.5835C20.8708 14.0832 21.1464 13.969 21.3495 13.7659C21.5527 13.5627 21.6668 13.2872 21.6668 12.9998C21.6668 12.7125 21.5527 12.437 21.3495 12.2338C21.1464 12.0306 20.8708 11.9165 20.5835 11.9165Z" fill="#158F44" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="qa-card__hidden">
+                                <div class="qa-card__text">
+                                    Все граждане иностранцы, достигшие 21 года и имеющие разрешение на временное проживание в Москве и области, могут взять заем под залог авто! Мы предлагаем выгодные условия. Ведь наша основная цель — помочь трудовым мигрантам и иностранным гражданам, имеющим миграционный патент, адаптироваться на новом месте. Заполните форму на сайте и наш менеджер проконсультирует вас по этому вопросу.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="qa-card">
+                            <div class="qa-card__show">
+                                <div class="qa-card__title text24 text18-tablet">
+                                    Останется ли автомобиль у меня?
+                                </div>
+                                <button class="qa-card__btn">
+                                    <svg class="_view1" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.5835 11.9168H14.0835V5.41683C14.0835 5.12951 13.9694 4.85396 13.7662 4.6508C13.563 4.44763 13.2875 4.3335 13.0002 4.3335C12.7128 4.3335 12.4373 4.44763 12.2341 4.6508C12.031 4.85396 11.9168 5.12951 11.9168 5.41683V11.9168H5.41683C5.12951 11.9168 4.85396 12.031 4.6508 12.2341C4.44763 12.4373 4.3335 12.7128 4.3335 13.0002C4.3335 13.2875 4.44763 13.563 4.6508 13.7662C4.85396 13.9694 5.12951 14.0835 5.41683 14.0835H11.9168V20.5835C11.9168 20.8708 12.031 21.1464 12.2341 21.3495C12.4373 21.5527 12.7128 21.6668 13.0002 21.6668C13.2875 21.6668 13.563 21.5527 13.7662 21.3495C13.9694 21.1464 14.0835 20.8708 14.0835 20.5835V14.0835H20.5835C20.8708 14.0835 21.1464 13.9694 21.3495 13.7662C21.5527 13.563 21.6668 13.2875 21.6668 13.0002C21.6668 12.7128 21.5527 12.4373 21.3495 12.2341C21.1464 12.031 20.8708 11.9168 20.5835 11.9168Z" fill="#231F20" />
+                                    </svg>
+                                    <svg class="_view2" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.5835 11.9165H5.41683C5.12951 11.9165 4.85396 12.0306 4.6508 12.2338C4.44763 12.437 4.3335 12.7125 4.3335 12.9998C4.3335 13.2872 4.44763 13.5627 4.6508 13.7659C4.85396 13.969 5.12951 14.0832 5.41683 14.0832H20.5835C20.8708 14.0832 21.1464 13.969 21.3495 13.7659C21.5527 13.5627 21.6668 13.2872 21.6668 12.9998C21.6668 12.7125 21.5527 12.437 21.3495 12.2338C21.1464 12.0306 20.8708 11.9165 20.5835 11.9165Z" fill="#158F44" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="qa-card__hidden">
+                                <div class="qa-card__text">
+                                    Все граждане иностранцы, достигшие 21 года и имеющие разрешение на временное проживание в Москве и области, могут взять заем под залог авто! Мы предлагаем выгодные условия. Ведь наша основная цель — помочь трудовым мигрантам и иностранным гражданам, имеющим миграционный патент, адаптироваться на новом месте. Заполните форму на сайте и наш менеджер проконсультирует вас по этому вопросу.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="qa-card">
+                            <div class="qa-card__show">
+                                <div class="qa-card__title text24 text18-tablet">
+                                    Возможно ли оформление договора по генеральной доверенности?
+                                </div>
+                                <button class="qa-card__btn">
+                                    <svg class="_view1" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.5835 11.9168H14.0835V5.41683C14.0835 5.12951 13.9694 4.85396 13.7662 4.6508C13.563 4.44763 13.2875 4.3335 13.0002 4.3335C12.7128 4.3335 12.4373 4.44763 12.2341 4.6508C12.031 4.85396 11.9168 5.12951 11.9168 5.41683V11.9168H5.41683C5.12951 11.9168 4.85396 12.031 4.6508 12.2341C4.44763 12.4373 4.3335 12.7128 4.3335 13.0002C4.3335 13.2875 4.44763 13.563 4.6508 13.7662C4.85396 13.9694 5.12951 14.0835 5.41683 14.0835H11.9168V20.5835C11.9168 20.8708 12.031 21.1464 12.2341 21.3495C12.4373 21.5527 12.7128 21.6668 13.0002 21.6668C13.2875 21.6668 13.563 21.5527 13.7662 21.3495C13.9694 21.1464 14.0835 20.8708 14.0835 20.5835V14.0835H20.5835C20.8708 14.0835 21.1464 13.9694 21.3495 13.7662C21.5527 13.563 21.6668 13.2875 21.6668 13.0002C21.6668 12.7128 21.5527 12.4373 21.3495 12.2341C21.1464 12.031 20.8708 11.9168 20.5835 11.9168Z" fill="#231F20" />
+                                    </svg>
+                                    <svg class="_view2" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.5835 11.9165H5.41683C5.12951 11.9165 4.85396 12.0306 4.6508 12.2338C4.44763 12.437 4.3335 12.7125 4.3335 12.9998C4.3335 13.2872 4.44763 13.5627 4.6508 13.7659C4.85396 13.969 5.12951 14.0832 5.41683 14.0832H20.5835C20.8708 14.0832 21.1464 13.969 21.3495 13.7659C21.5527 13.5627 21.6668 13.2872 21.6668 12.9998C21.6668 12.7125 21.5527 12.437 21.3495 12.2338C21.1464 12.0306 20.8708 11.9165 20.5835 11.9165Z" fill="#158F44" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="qa-card__hidden">
+                                <div class="qa-card__text">
+                                    Все граждане иностранцы, достигшие 21 года и имеющие разрешение на временное проживание в Москве и области, могут взять заем под залог авто! Мы предлагаем выгодные условия. Ведь наша основная цель — помочь трудовым мигрантам и иностранным гражданам, имеющим миграционный патент, адаптироваться на новом месте. Заполните форму на сайте и наш менеджер проконсультирует вас по этому вопросу.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="what">
+                <div class="container">
+                    <div class="h2">
+                        Что такое КПК “ГоСотделение”
+                    </div>
+                    <div class="what__grid">
+                        <div class="what__col">
+                            <div class="about__items">
+                                <div class="about-item">
+                                    <div class="about-item__title text20 bold-text">
+                                        Кредитный потребительский кооператив "Городское Сберегательное Отделение" - это
+                                    </div>
+                                    <div class="about-item__desc text16">
+                                        добровольное объединение физических и юридических лиц на основе членства в целях удовлетворения финансовых потребностей членов кредитного кооператива (пайщиков).
+                                    </div>
+                                </div>
+
+                                <div class="about-item">
+                                    <div class="about-item__title text20 bold-text">
+                                        Наш кооператив внесен в Государственный реестр кредитных потребительских кооперативов ЦБ РФ,
+                                    </div>
+                                    <div class="about-item__desc text16">
+                                        плановая проверка деятельности кооператива проведена ЦБ РФ в мае 2017 года и феврале 2019 года.
+                                    </div>
+                                </div>
+
+                                <div class="about-item">
+                                    <div class="about-item__title text20 bold-text">
+                                        Кооператив работает
+                                    </div>
+                                    <div class="about-item__desc text16">
+                                        на основании и в соответствии с положениями <br> <b>Федерального закона <br> «О кредитной кооперации» № 190 ФЗ от 18 июля 2009 г.</b>
+                                    </div>
+                                </div>
+
+                                <div class="about-item">
+                                    <div class="about-item__title text20 bold-text">
+                                        Также КПК "ГоСотделение"
+                                    </div>
+                                    <div class="about-item__desc text16">
+                                        состоит Ассоциации СРО «НОКК» (в реестре членов СРО №-23 от 29.09.2022 г.)
+                                    </div>
+                                </div>
+
+                                <div class="about-item">
+                                    <div class="about-item__title text20 bold-text">
+                                        В сентябре 2019 года наш кооператив успешно прошел проверку СРО "НОКК"
+                                    </div>
+                                    <div class="about-item__desc text16">
+                                        Начало деятельности КПК "ГоСотделение" было положено в 2009 году в г. Иркутске.
+                                    </div>
+                                </div>
+
+                                <div class="about-item">
+                                    <div class="about-item__title text20 bold-text">
+                                        У нас 38 отделений по всей России
+                                    </div>
+                                    <div class="about-item__desc text16">
+                                        За 14 лет кооператив превратился в крупную, надежную компанию, пользующуюся заслуженным доверием клиентов.
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="what__col">
+                            <img src="img/what.webp" alt="" class="what__img">
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="contacts">
+                <div class="container">
+                    <h2 class="h2">
+                        <span>Наши</span> контакты
+                    </h2>
+
+                    <div class="contacts__inner">
+                        <div class="contacts__map">
+                            <div id="map" class="map"></div>
+                            <script type="text/javascript">
+                                ymaps.ready(init);
+                                let coord = [54.780579, 32.014897]
+
+
+
+                                function init() {
+                                    let myMap = new ymaps.Map("map", {
+                                        center: coord,
+                                        zoom: 18,
+                                        controls: []
+                                    });
+
+                                    myMap.behaviors.disable('scrollZoom');
+
+
+                                    let placeMark = new ymaps.Placemark(coord, {
+                                        balloonContentHeader: ``,
+                                        balloonContentBody: ``,
+                                        balloonContentFooter: '',
+                                        hintContent: '',
+                                    }, {
+                                        iconLayout: 'default#image',
+                                        iconImageHref: "img/mark.svg",
+                                        iconImageSize: [68, 80],
+                                        iconImageOffset: [0, -78]
+                                    });
+                                    myMap.geoObjects.add(placeMark);
+
+
+
+                                }
+                            </script>
+                        </div>
+                        <div class="contacts__content">
+                            <div class="socials">
+                                <div class="text24 lh110 bold-text">
+                                    Мы на связи:
+                                </div>
+                                <div class="socials__items">
+                                    <a href="" class="socials__item">
+                                        <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="36" height="36" rx="18" fill="#158F44" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.7747 24.4497H19.0299C19.0299 24.4497 19.4089 24.4078 19.6028 24.199C19.7809 24.007 19.7752 23.6467 19.7752 23.6467C19.7752 23.6467 19.7507 21.9597 20.5322 21.7113C21.303 21.4664 22.2925 23.3417 23.3412 24.0628C24.1343 24.6083 24.737 24.4889 24.737 24.4889L27.5414 24.4497C27.5414 24.4497 29.0084 24.359 28.3128 23.2037C28.2559 23.1093 27.9076 22.3491 26.2275 20.7871C24.4689 19.1523 24.7047 19.4168 26.8229 16.5889C28.1129 14.8667 28.6286 13.8154 28.4674 13.3651C28.3139 12.9361 27.365 13.0494 27.365 13.0494L24.2074 13.069C24.2074 13.069 23.9732 13.0371 23.7997 13.1411C23.63 13.2428 23.521 13.4804 23.521 13.4804C23.521 13.4804 23.0211 14.8129 22.3548 15.9464C20.9488 18.3378 20.3865 18.4644 20.1566 18.3157C19.6219 17.9695 19.7555 16.9255 19.7555 16.1835C19.7555 13.8659 20.1065 12.8996 19.0721 12.6495C18.7289 12.5665 18.4761 12.5116 17.5983 12.5027C16.4715 12.4912 15.5181 12.5061 14.9781 12.7711C14.6189 12.9473 14.3417 13.3399 14.5106 13.3624C14.7194 13.3903 15.1919 13.4902 15.4425 13.8317C15.7661 14.2728 15.7548 15.2629 15.7548 15.2629C15.7548 15.2629 15.9408 17.9911 15.3206 18.3299C14.895 18.5623 14.3111 18.0878 13.0576 15.9182C12.4154 14.8069 11.9304 13.5783 11.9304 13.5783C11.9304 13.5783 11.837 13.3487 11.6702 13.2259C11.4678 13.077 11.1851 13.0298 11.1851 13.0298L8.18447 13.0494C8.18447 13.0494 7.73412 13.062 7.56863 13.2582C7.4214 13.4329 7.55687 13.7937 7.55687 13.7937C7.55687 13.7937 9.9059 19.2986 12.566 22.0728C15.0053 24.6166 17.7747 24.4497 17.7747 24.4497Z" fill="white" />
+                                        </svg>
+                                    </a>
+                                    <a href="" class="socials__item">
+                                        <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="36" height="36" rx="18" fill="#158F44" />
+                                            <path d="M18 8C15.5147 8 13.5 10.0147 13.5 12.4999C13.5 14.9852 15.5147 17 18 17C20.4853 17 22.5 14.9852 22.5 12.4999C22.5 10.0147 20.4853 8 18 8ZM18 14.3602C16.9727 14.3602 16.1398 13.5273 16.1398 12.5C16.1398 11.4726 16.9727 10.6398 18 10.6398C19.0273 10.6398 19.8602 11.4726 19.8602 12.5C19.8602 13.5273 19.0273 14.3602 18 14.3602Z" fill="white" />
+                                            <path d="M19.9714 22.0226C22.1083 21.4874 23.3888 20.2433 23.4566 20.1765C24.0819 19.56 24.1823 18.437 23.6808 17.6681C23.1794 16.8994 22.2661 16.7759 21.6406 17.3923C21.6274 17.4054 20.2616 18.6935 18.0144 18.6954C15.7673 18.6935 14.3726 17.4054 14.3594 17.3923C13.7339 16.7759 12.8206 16.8994 12.3192 17.6681C11.8177 18.437 11.9181 19.56 12.5434 20.1765C12.6121 20.2442 13.9455 21.5208 16.1423 22.0434L13.0807 25.9772C12.5243 26.6866 12.541 27.8161 13.118 28.5002C13.3996 28.8341 13.7626 29 14.1253 29C14.5056 29 14.8854 28.8173 15.1702 28.4542L18.0145 24.7292L21.146 28.4783C21.7134 29.1748 22.6322 29.1736 23.1985 28.4763C23.7649 27.779 23.7642 26.6492 23.1969 25.9529L19.9714 22.0226Z" fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="city-select">
+                                <div class="city-select__show">
+                                    <div class="city-select__icon">
+                                        <img src="img/marker.svg" alt="">
+                                    </div>
+                                    <div class="city-select__info">
+                                        <span class="city-select__title text16">Выбрать город:</span>
+                                        <span class="city-select__name text14">Иркутск</span>
+                                    </div>
+                                    <img src="img/arrow.svg" alt="" class="city-select__arrow">
+                                </div>
+
+                                <div class="city-select__dropdown">
+                                    <div class="city-select__variants">
+                                        <a href="" class="city-item"><span>Ангарск</span></a>
+                                        <a href="" class="city-item"><span>Братск</span></a>
+                                        <a href="" class="city-item"><span>Вихоревка</span></a>
+                                        <a href="" class="city-item"><span>Железногорск-Илимский</span></a>
+                                        <a href="" class="city-item"><span>Залари</span></a>
+                                        <a href="" class="city-item"><span>Зима</span></a>
+                                        <a href="" class="city-item _active"><span>Иркутск</span></a>
+                                        <a href="" class="city-item"><span>Нижнеудинск</span></a>
+                                        <a href="" class="city-item"><span>Саянск</span></a>
+                                        <a href="" class="city-item"><span>Свирск</span></a>
+                                        <a href="" class="city-item"><span>Слюдянка</span></a>
+                                        <a href="" class="city-item"><span>Тайшет</span></a>
+                                        <a href="" class="city-item"><span>Тулун</span></a>
+                                        <a href="" class="city-item"><span>Улан-Удэ</span></a>
+                                        <a href="" class="city-item"><span>Усолье-Сибирское</span></a>
+                                        <a href="" class="city-item"><span>Усть-Илимск</span></a>
+                                        <a href="" class="city-item"><span>Усть-Ордынский</span></a>
+                                        <a href="" class="city-item"><span>Черемхово</span></a>
+                                        <a href="" class="city-item"><span>Шелехов</span></a>
+                                        <a href="" class="city-item"><span>Хомутово</span></a>
+                                        <a href="" class="city-item"><span>Качуг</span></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts__places">
+                                <div class="address-card">
+                                    <div class="address-card__title text24 bold-text">
+                                        Иркутск, Маяковского, д.19
+                                    </div>
+                                    <div class="address-card__contacts">
+                                        <a href="" class="address-card__phone">
+                                            <img src="img/phone2.svg" alt="">
+                                            <span class="text14">8 (3952) 19-94-98</span>
+                                        </a>
+                                        <div class="address-card__socials">
+
+                                            <a href="" class="address-card__social">
+                                                <img src="img/whatsapp.svg" alt="">
+                                            </a>
+
+                                            <a href="" class="address-card__social">
+                                                <img src="img/viber.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <a href="" class="address-card__phone">
+                                            <img src="img/phone.svg" alt="">
+                                            <span class="text14">8 (3952) 19-94-98</span>
+                                        </a>
+                                    </div>
+                                    <div class="address-card__place">
+                                        <img src="img/clock.svg" alt="">
+                                        <span class="text14">с 09.00 до 18.00, без обеда, сб / вс: выходной</span>
+                                    </div>
+                                </div>
+
+                                <div class="address-card">
+                                    <div class="address-card__title text24 bold-text">
+                                        Иркутск, Богдана Хмельницкого, 35
+                                    </div>
+                                    <div class="address-card__contacts">
+                                        <a href="" class="address-card__phone">
+                                            <img src="img/phone2.svg" alt="">
+                                            <span class="text14">8 (3952) 19-94-98</span>
+                                        </a>
+                                        <div class="address-card__socials">
+
+                                            <a href="" class="address-card__social">
+                                                <img src="img/viber.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <a href="" class="address-card__phone">
+                                            <img src="img/phone.svg" alt="">
+                                            <span class="text14">8 (3952) 19-94-98</span>
+                                        </a>
+                                    </div>
+                                    <div class="address-card__place">
+                                        <img src="img/clock.svg" alt="">
+                                        <span class="text14">с 09.00 до 18.00, без обеда, сб / вс: выходной</span>
+                                    </div>
+                                </div>
+
+                                <div class="address-card">
+                                    <div class="address-card__title text24 bold-text">
+                                        Иркутск, Богдана Хмельницкого, 35
+                                    </div>
+                                    <div class="address-card__contacts">
+                                        <a href="" class="address-card__phone">
+                                            <img src="img/phone2.svg" alt="">
+                                            <span class="text14">8 (3952) 19-94-98</span>
+                                        </a>
+                                        <div class="address-card__socials">
+
+                                            <a href="" class="address-card__social">
+                                                <img src="img/viber.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <a href="" class="address-card__phone">
+                                            <img src="img/phone.svg" alt="">
+                                            <span class="text14">8 (3952) 19-94-98</span>
+                                        </a>
+                                    </div>
+                                    <div class="address-card__place">
+                                        <img src="img/clock.svg" alt="">
+                                        <span class="text14">с 09.00 до 18.00, без обеда, сб / вс: выходной</span>
+                                    </div>
+                                </div>
+
+                                <div class="address-card">
+                                    <div class="address-card__title text24 bold-text">
+                                        Иркутск, Богдана Хмельницкого, 35
+                                    </div>
+                                    <div class="address-card__contacts">
+                                        <a href="" class="address-card__phone">
+                                            <img src="img/phone2.svg" alt="">
+                                            <span class="text14">8 (3952) 19-94-98</span>
+                                        </a>
+                                        <div class="address-card__socials">
+
+                                            <a href="" class="address-card__social">
+                                                <img src="img/viber.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <a href="" class="address-card__phone">
+                                            <img src="img/phone.svg" alt="">
+                                            <span class="text14">8 (3952) 19-94-98</span>
+                                        </a>
+                                    </div>
+                                    <div class="address-card__place">
+                                        <img src="img/clock.svg" alt="">
+                                        <span class="text14">с 09.00 до 18.00, без обеда, сб / вс: выходной</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top">
+                    <a href="" class="footer__logo">
+                        <img src="img/logo3.svg" alt="">
+                    </a>
+                    <div class="footer-nav">
+                        <a href="" class="footer-nav__link"><span>Преимущества займа</span></a>
+                        <a href="" class="footer-nav__link"><span>О компании</span></a>
+                        <a href="" class="footer-nav__link"><span>Условия займа</span></a>
+                        <a href="" class="footer-nav__link"><span>Контакты</span></a>
+                        <a href="" class="footer-nav__link"><span>Как получить займ</span></a>
+                        <a href="" class="footer-nav__link _border"><span>Оплата займа</span></a>
+                    </div>
+
+                    <div class="footer-contacts">
+                        <div class="footer-contacts__item">
+                            <div class="footer-contacts__icon">
+                                <img src="img/marker.svg" alt="">
+                            </div>
+                            <div class="footer-contacts__content">
+                                <div class="text16">Город:</div>
+                                <button class="footer-contacts__btn" data-modal="cityModal">
+                                    Железногорск-Илимский
+                                </button>
+                            </div>
+                        </div>
+                        <div class="footer-contacts__item">
+                            <div class="footer-contacts__icon">
+                                <img src="img/phone.svg" alt="">
+                            </div>
+                            <div class="footer-contacts__content">
+                                <a href="" class="text24">
+                                    8 (3952) 19-94-54
+                                </a>
+                                <button class="footer-contacts__btn">Заказать обратный звонок</button>
+                            </div>
+                        </div>
+                        <div class="socials">
+                            <div class="socials">
+                                <div class="socials__title text16">Мы на связи:</div>
+                                <div class="socials__items">
+                                    <a href="" class="socials__item">
+                                        <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="36" height="36" rx="18" fill="#158F44" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.7747 24.4497H19.0299C19.0299 24.4497 19.4089 24.4078 19.6028 24.199C19.7809 24.007 19.7752 23.6467 19.7752 23.6467C19.7752 23.6467 19.7507 21.9597 20.5322 21.7113C21.303 21.4664 22.2925 23.3417 23.3412 24.0628C24.1343 24.6083 24.737 24.4889 24.737 24.4889L27.5414 24.4497C27.5414 24.4497 29.0084 24.359 28.3128 23.2037C28.2559 23.1093 27.9076 22.3491 26.2275 20.7871C24.4689 19.1523 24.7047 19.4168 26.8229 16.5889C28.1129 14.8667 28.6286 13.8154 28.4674 13.3651C28.3139 12.9361 27.365 13.0494 27.365 13.0494L24.2074 13.069C24.2074 13.069 23.9732 13.0371 23.7997 13.1411C23.63 13.2428 23.521 13.4804 23.521 13.4804C23.521 13.4804 23.0211 14.8129 22.3548 15.9464C20.9488 18.3378 20.3865 18.4644 20.1566 18.3157C19.6219 17.9695 19.7555 16.9255 19.7555 16.1835C19.7555 13.8659 20.1065 12.8996 19.0721 12.6495C18.7289 12.5665 18.4761 12.5116 17.5983 12.5027C16.4715 12.4912 15.5181 12.5061 14.9781 12.7711C14.6189 12.9473 14.3417 13.3399 14.5106 13.3624C14.7194 13.3903 15.1919 13.4902 15.4425 13.8317C15.7661 14.2728 15.7548 15.2629 15.7548 15.2629C15.7548 15.2629 15.9408 17.9911 15.3206 18.3299C14.895 18.5623 14.3111 18.0878 13.0576 15.9182C12.4154 14.8069 11.9304 13.5783 11.9304 13.5783C11.9304 13.5783 11.837 13.3487 11.6702 13.2259C11.4678 13.077 11.1851 13.0298 11.1851 13.0298L8.18447 13.0494C8.18447 13.0494 7.73412 13.062 7.56863 13.2582C7.4214 13.4329 7.55687 13.7937 7.55687 13.7937C7.55687 13.7937 9.9059 19.2986 12.566 22.0728C15.0053 24.6166 17.7747 24.4497 17.7747 24.4497Z" fill="white" />
+                                        </svg>
+                                    </a>
+                                    <a href="" class="socials__item">
+                                        <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect y="0.5" width="36" height="36" rx="18" fill="#158F44" />
+                                            <path d="M18 8C15.5147 8 13.5 10.0147 13.5 12.4999C13.5 14.9852 15.5147 17 18 17C20.4853 17 22.5 14.9852 22.5 12.4999C22.5 10.0147 20.4853 8 18 8ZM18 14.3602C16.9727 14.3602 16.1398 13.5273 16.1398 12.5C16.1398 11.4726 16.9727 10.6398 18 10.6398C19.0273 10.6398 19.8602 11.4726 19.8602 12.5C19.8602 13.5273 19.0273 14.3602 18 14.3602Z" fill="white" />
+                                            <path d="M19.9714 22.0226C22.1083 21.4874 23.3888 20.2433 23.4566 20.1765C24.0819 19.56 24.1823 18.437 23.6808 17.6681C23.1794 16.8994 22.2661 16.7759 21.6406 17.3923C21.6274 17.4054 20.2616 18.6935 18.0144 18.6954C15.7673 18.6935 14.3726 17.4054 14.3594 17.3923C13.7339 16.7759 12.8206 16.8994 12.3192 17.6681C11.8177 18.437 11.9181 19.56 12.5434 20.1765C12.6121 20.2442 13.9455 21.5208 16.1423 22.0434L13.0807 25.9772C12.5243 26.6866 12.541 27.8161 13.118 28.5002C13.3996 28.8341 13.7626 29 14.1253 29C14.5056 29 14.8854 28.8173 15.1702 28.4542L18.0145 24.7292L21.146 28.4783C21.7134 29.1748 22.6322 29.1736 23.1985 28.4763C23.7649 27.779 23.7642 26.6492 23.1969 25.9529L19.9714 22.0226Z" fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="m-btn m-btn-green">
+                            <span>Обратный звонок</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__text">
+                        Кредитный потребительский кооператив "Городское Сберегательное отделение" (КПК «ГоСотделение»). *Деятельность Кредитного потребительского кооператива «ГОРОДСКОЕ СБЕРЕГАТЕЛЬНОЕ ОТДЕЛЕНИЕ» осуществляется на основании допуска Ассоциации СРО «НОКК» (в реестре членов СРО №-23 от 29.09.2022 г.) Не подлежит обязательному лицензированию  и осуществляется в соответствии с Федеральным Законом № 190 - ФЗ от 18.07.2009 г. «О кредитной кооперации». Финансовые услуги предоставляются только членам (пайщикам) кооператива. Минимальный паевой взнос для физических лиц 50 рублей, для юридических лиц 1000 рублей. Члены кредитного кооператива (пайщики) солидарно несут субсидиарную ответственность  по его обязательствам в пределах не внесенной части дополнительного взноса каждого из членов кредитного кооператива (пайщиков). Членами кооператива могут быть лица постоянно  или временно зарегистрированные в соответствии с территориальным признаком установленные уставом.
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+
+    <div class="modal feedback-modal" id="feedbackModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.4099 12.0002L17.7099 7.71019C17.8982 7.52188 18.004 7.26649 18.004 7.00019C18.004 6.73388 17.8982 6.47849 17.7099 6.29019C17.5216 6.10188 17.2662 5.99609 16.9999 5.99609C16.7336 5.99609 16.4782 6.10188 16.2899 6.29019L11.9999 10.5902L7.70994 6.29019C7.52164 6.10188 7.26624 5.99609 6.99994 5.99609C6.73364 5.99609 6.47824 6.10188 6.28994 6.29019C6.10164 6.47849 5.99585 6.73388 5.99585 7.00019C5.99585 7.26649 6.10164 7.52188 6.28994 7.71019L10.5899 12.0002L6.28994 16.2902C6.19621 16.3831 6.12182 16.4937 6.07105 16.6156C6.02028 16.7375 5.99414 16.8682 5.99414 17.0002C5.99414 17.1322 6.02028 17.2629 6.07105 17.3848C6.12182 17.5066 6.19621 17.6172 6.28994 17.7102C6.3829 17.8039 6.4935 17.8783 6.61536 17.9291C6.73722 17.9798 6.86793 18.006 6.99994 18.006C7.13195 18.006 7.26266 17.9798 7.38452 17.9291C7.50638 17.8783 7.61698 17.8039 7.70994 17.7102L11.9999 13.4102L16.2899 17.7102C16.3829 17.8039 16.4935 17.8783 16.6154 17.9291C16.7372 17.9798 16.8679 18.006 16.9999 18.006C17.132 18.006 17.2627 17.9798 17.3845 17.9291C17.5064 17.8783 17.617 17.8039 17.7099 17.7102C17.8037 17.6172 17.8781 17.5066 17.9288 17.3848C17.9796 17.2629 18.0057 17.1322 18.0057 17.0002C18.0057 16.8682 17.9796 16.7375 17.9288 16.6156C17.8781 16.4937 17.8037 16.3831 17.7099 16.2902L13.4099 12.0002Z" fill="#ED1F26" />
+                </svg>
+            </button>
+            <form action="" class="feedback-form ">
+                <div class="text30 text22-tablet bold-text">
+                    Получите консультацию <br>
+        о мат. капитале сейчас!
+                </div>
+                <div class="feedback-form__fields">
+                    <div class="fg">
+                        <input type="text" placeholder="Ваше имя">
+                    </div>
+                    <div class="fg">
+                        <input type="tel" placeholder="Номер телефона">
+                    </div>
+                    <div class="fg">
+                        <select>
+                            <!--                            <option selected disabled hidden>Выберите город</option>-->
+                            <option selected>Ангарск</option>
+                            <option>Братск</option>
+                            <option>Вихоревка</option>
+                            <option>Железногорск-Илимский</option>
+                            <option>Залари</option>
+                            <option>Нижнеудинск</option>
+                            <option>Саянск</option>
+                            <option>Свирск</option>
+                            <option>Слюдянка</option>
+                            <option>Тайшет</option>
+                            <option>Тулун</option>
+                            <option>Улан-Удэ</option>
+                            <option>Усолье-Сибирское</option>
+                            <option>Усть-Илимск</option>
+                            <option>Усть-Ордынский</option>
+                            <option>Черемхово</option>
+                            <option>Шелехов</option>
+                            <option>Хомутово</option>
+                            <option>Качуг</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="m-check _small">
+                    <input type="checkbox">
+                    <label><span>Нажимая на кнопку «Отправить заявку», я соглашаюсь на обработку персональных данных и согласен с Политикой конфиденциальности и Лицензией</span></label>
+                </div>
+                <button type="submit" class="calc-form__btn m-btn m-btn-green">
+                    <span>Отправить заявку</span>
+                </button>
+
+                <div class="success-form">
+                    <img src="img/check3.svg" alt="" class="success-form__check">
+                    <div class="success-form__text">
+                        <div class="text30 text22-tablet">Спасибо, ваша заявка получена, мы позвоним вам в рабочее время.</div>
+                        <div class="text30 text22-tablet">Мы работаем с <span>9:00 до 19:00</span></div>
+                    </div>
+                    <div class="socials">
+                        <div class="socials__title">
+                            А пока можете посмотреть
+                            наши соц. сети
+                        </div>
+                        <div class="socials__items">
+                            <a href="" class="socials__item">
+                                <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="0.5" width="36" height="36" rx="18" fill="#158F44"></rect>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.7747 24.4497H19.0299C19.0299 24.4497 19.4089 24.4078 19.6028 24.199C19.7809 24.007 19.7752 23.6467 19.7752 23.6467C19.7752 23.6467 19.7507 21.9597 20.5322 21.7113C21.303 21.4664 22.2925 23.3417 23.3412 24.0628C24.1343 24.6083 24.737 24.4889 24.737 24.4889L27.5414 24.4497C27.5414 24.4497 29.0084 24.359 28.3128 23.2037C28.2559 23.1093 27.9076 22.3491 26.2275 20.7871C24.4689 19.1523 24.7047 19.4168 26.8229 16.5889C28.1129 14.8667 28.6286 13.8154 28.4674 13.3651C28.3139 12.9361 27.365 13.0494 27.365 13.0494L24.2074 13.069C24.2074 13.069 23.9732 13.0371 23.7997 13.1411C23.63 13.2428 23.521 13.4804 23.521 13.4804C23.521 13.4804 23.0211 14.8129 22.3548 15.9464C20.9488 18.3378 20.3865 18.4644 20.1566 18.3157C19.6219 17.9695 19.7555 16.9255 19.7555 16.1835C19.7555 13.8659 20.1065 12.8996 19.0721 12.6495C18.7289 12.5665 18.4761 12.5116 17.5983 12.5027C16.4715 12.4912 15.5181 12.5061 14.9781 12.7711C14.6189 12.9473 14.3417 13.3399 14.5106 13.3624C14.7194 13.3903 15.1919 13.4902 15.4425 13.8317C15.7661 14.2728 15.7548 15.2629 15.7548 15.2629C15.7548 15.2629 15.9408 17.9911 15.3206 18.3299C14.895 18.5623 14.3111 18.0878 13.0576 15.9182C12.4154 14.8069 11.9304 13.5783 11.9304 13.5783C11.9304 13.5783 11.837 13.3487 11.6702 13.2259C11.4678 13.077 11.1851 13.0298 11.1851 13.0298L8.18447 13.0494C8.18447 13.0494 7.73412 13.062 7.56863 13.2582C7.4214 13.4329 7.55687 13.7937 7.55687 13.7937C7.55687 13.7937 9.9059 19.2986 12.566 22.0728C15.0053 24.6166 17.7747 24.4497 17.7747 24.4497Z" fill="white"></path>
+                                </svg>
+                            </a>
+                            <a href="" class="socials__item">
+                                <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="0.5" width="36" height="36" rx="18" fill="#158F44"></rect>
+                                    <path d="M18 8C15.5147 8 13.5 10.0147 13.5 12.4999C13.5 14.9852 15.5147 17 18 17C20.4853 17 22.5 14.9852 22.5 12.4999C22.5 10.0147 20.4853 8 18 8ZM18 14.3602C16.9727 14.3602 16.1398 13.5273 16.1398 12.5C16.1398 11.4726 16.9727 10.6398 18 10.6398C19.0273 10.6398 19.8602 11.4726 19.8602 12.5C19.8602 13.5273 19.0273 14.3602 18 14.3602Z" fill="white"></path>
+                                    <path d="M19.9714 22.0226C22.1083 21.4874 23.3888 20.2433 23.4566 20.1765C24.0819 19.56 24.1823 18.437 23.6808 17.6681C23.1794 16.8994 22.2661 16.7759 21.6406 17.3923C21.6274 17.4054 20.2616 18.6935 18.0144 18.6954C15.7673 18.6935 14.3726 17.4054 14.3594 17.3923C13.7339 16.7759 12.8206 16.8994 12.3192 17.6681C11.8177 18.437 11.9181 19.56 12.5434 20.1765C12.6121 20.2442 13.9455 21.5208 16.1423 22.0434L13.0807 25.9772C12.5243 26.6866 12.541 27.8161 13.118 28.5002C13.3996 28.8341 13.7626 29 14.1253 29C14.5056 29 14.8854 28.8173 15.1702 28.4542L18.0145 24.7292L21.146 28.4783C21.7134 29.1748 22.6322 29.1736 23.1985 28.4763C23.7649 27.779 23.7642 26.6492 23.1969 25.9529L19.9714 22.0226Z" fill="white"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+
+
+        </div>
+    </div>
+
+    <div class="modal feedback-modal" id="feedbackModal2">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.4099 12.0002L17.7099 7.71019C17.8982 7.52188 18.004 7.26649 18.004 7.00019C18.004 6.73388 17.8982 6.47849 17.7099 6.29019C17.5216 6.10188 17.2662 5.99609 16.9999 5.99609C16.7336 5.99609 16.4782 6.10188 16.2899 6.29019L11.9999 10.5902L7.70994 6.29019C7.52164 6.10188 7.26624 5.99609 6.99994 5.99609C6.73364 5.99609 6.47824 6.10188 6.28994 6.29019C6.10164 6.47849 5.99585 6.73388 5.99585 7.00019C5.99585 7.26649 6.10164 7.52188 6.28994 7.71019L10.5899 12.0002L6.28994 16.2902C6.19621 16.3831 6.12182 16.4937 6.07105 16.6156C6.02028 16.7375 5.99414 16.8682 5.99414 17.0002C5.99414 17.1322 6.02028 17.2629 6.07105 17.3848C6.12182 17.5066 6.19621 17.6172 6.28994 17.7102C6.3829 17.8039 6.4935 17.8783 6.61536 17.9291C6.73722 17.9798 6.86793 18.006 6.99994 18.006C7.13195 18.006 7.26266 17.9798 7.38452 17.9291C7.50638 17.8783 7.61698 17.8039 7.70994 17.7102L11.9999 13.4102L16.2899 17.7102C16.3829 17.8039 16.4935 17.8783 16.6154 17.9291C16.7372 17.9798 16.8679 18.006 16.9999 18.006C17.132 18.006 17.2627 17.9798 17.3845 17.9291C17.5064 17.8783 17.617 17.8039 17.7099 17.7102C17.8037 17.6172 17.8781 17.5066 17.9288 17.3848C17.9796 17.2629 18.0057 17.1322 18.0057 17.0002C18.0057 16.8682 17.9796 16.7375 17.9288 16.6156C17.8781 16.4937 17.8037 16.3831 17.7099 16.2902L13.4099 12.0002Z" fill="#ED1F26" />
+                </svg>
+            </button>
+            <form action="" class="feedback-form _success">
+                <div class="text30 text22-tablet bold-text">
+                    Получите консультацию <br>
+        о мат. капитале сейчас!
+                </div>
+                <div class="feedback-form__fields">
+                    <div class="fg">
+                        <input type="text" placeholder="Ваше имя">
+                    </div>
+                    <div class="fg">
+                        <input type="tel" placeholder="Номер телефона">
+                    </div>
+                    <div class="fg">
+                        <select>
+                            <!--                            <option selected disabled hidden>Выберите город</option>-->
+                            <option selected>Ангарск</option>
+                            <option>Братск</option>
+                            <option>Вихоревка</option>
+                            <option>Железногорск-Илимский</option>
+                            <option>Залари</option>
+                            <option>Нижнеудинск</option>
+                            <option>Саянск</option>
+                            <option>Свирск</option>
+                            <option>Слюдянка</option>
+                            <option>Тайшет</option>
+                            <option>Тулун</option>
+                            <option>Улан-Удэ</option>
+                            <option>Усолье-Сибирское</option>
+                            <option>Усть-Илимск</option>
+                            <option>Усть-Ордынский</option>
+                            <option>Черемхово</option>
+                            <option>Шелехов</option>
+                            <option>Хомутово</option>
+                            <option>Качуг</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="m-check _small">
+                    <input type="checkbox">
+                    <label><span>Нажимая на кнопку «Отправить заявку», я соглашаюсь на обработку персональных данных и согласен с Политикой конфиденциальности и Лицензией</span></label>
+                </div>
+                <button type="submit" class="calc-form__btn m-btn m-btn-green">
+                    <span>Отправить заявку</span>
+                </button>
+
+                <div class="success-form">
+                    <img src="img/check3.svg" alt="" class="success-form__check">
+                    <div class="success-form__text">
+                        <div class="text30 text22-tablet">Спасибо, ваша заявка получена, мы позвоним вам в рабочее время.</div>
+                        <div class="text30 text22-tablet">Мы работаем с <span>9:00 до 19:00</span></div>
+                    </div>
+                    <div class="socials">
+                        <div class="socials__title">
+                            А пока можете посмотреть
+                            наши соц. сети
+                        </div>
+                        <div class="socials__items">
+                            <a href="" class="socials__item">
+                                <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="0.5" width="36" height="36" rx="18" fill="#158F44"></rect>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.7747 24.4497H19.0299C19.0299 24.4497 19.4089 24.4078 19.6028 24.199C19.7809 24.007 19.7752 23.6467 19.7752 23.6467C19.7752 23.6467 19.7507 21.9597 20.5322 21.7113C21.303 21.4664 22.2925 23.3417 23.3412 24.0628C24.1343 24.6083 24.737 24.4889 24.737 24.4889L27.5414 24.4497C27.5414 24.4497 29.0084 24.359 28.3128 23.2037C28.2559 23.1093 27.9076 22.3491 26.2275 20.7871C24.4689 19.1523 24.7047 19.4168 26.8229 16.5889C28.1129 14.8667 28.6286 13.8154 28.4674 13.3651C28.3139 12.9361 27.365 13.0494 27.365 13.0494L24.2074 13.069C24.2074 13.069 23.9732 13.0371 23.7997 13.1411C23.63 13.2428 23.521 13.4804 23.521 13.4804C23.521 13.4804 23.0211 14.8129 22.3548 15.9464C20.9488 18.3378 20.3865 18.4644 20.1566 18.3157C19.6219 17.9695 19.7555 16.9255 19.7555 16.1835C19.7555 13.8659 20.1065 12.8996 19.0721 12.6495C18.7289 12.5665 18.4761 12.5116 17.5983 12.5027C16.4715 12.4912 15.5181 12.5061 14.9781 12.7711C14.6189 12.9473 14.3417 13.3399 14.5106 13.3624C14.7194 13.3903 15.1919 13.4902 15.4425 13.8317C15.7661 14.2728 15.7548 15.2629 15.7548 15.2629C15.7548 15.2629 15.9408 17.9911 15.3206 18.3299C14.895 18.5623 14.3111 18.0878 13.0576 15.9182C12.4154 14.8069 11.9304 13.5783 11.9304 13.5783C11.9304 13.5783 11.837 13.3487 11.6702 13.2259C11.4678 13.077 11.1851 13.0298 11.1851 13.0298L8.18447 13.0494C8.18447 13.0494 7.73412 13.062 7.56863 13.2582C7.4214 13.4329 7.55687 13.7937 7.55687 13.7937C7.55687 13.7937 9.9059 19.2986 12.566 22.0728C15.0053 24.6166 17.7747 24.4497 17.7747 24.4497Z" fill="white"></path>
+                                </svg>
+                            </a>
+                            <a href="" class="socials__item">
+                                <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="0.5" width="36" height="36" rx="18" fill="#158F44"></rect>
+                                    <path d="M18 8C15.5147 8 13.5 10.0147 13.5 12.4999C13.5 14.9852 15.5147 17 18 17C20.4853 17 22.5 14.9852 22.5 12.4999C22.5 10.0147 20.4853 8 18 8ZM18 14.3602C16.9727 14.3602 16.1398 13.5273 16.1398 12.5C16.1398 11.4726 16.9727 10.6398 18 10.6398C19.0273 10.6398 19.8602 11.4726 19.8602 12.5C19.8602 13.5273 19.0273 14.3602 18 14.3602Z" fill="white"></path>
+                                    <path d="M19.9714 22.0226C22.1083 21.4874 23.3888 20.2433 23.4566 20.1765C24.0819 19.56 24.1823 18.437 23.6808 17.6681C23.1794 16.8994 22.2661 16.7759 21.6406 17.3923C21.6274 17.4054 20.2616 18.6935 18.0144 18.6954C15.7673 18.6935 14.3726 17.4054 14.3594 17.3923C13.7339 16.7759 12.8206 16.8994 12.3192 17.6681C11.8177 18.437 11.9181 19.56 12.5434 20.1765C12.6121 20.2442 13.9455 21.5208 16.1423 22.0434L13.0807 25.9772C12.5243 26.6866 12.541 27.8161 13.118 28.5002C13.3996 28.8341 13.7626 29 14.1253 29C14.5056 29 14.8854 28.8173 15.1702 28.4542L18.0145 24.7292L21.146 28.4783C21.7134 29.1748 22.6322 29.1736 23.1985 28.4763C23.7649 27.779 23.7642 26.6492 23.1969 25.9529L19.9714 22.0226Z" fill="white"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+
+
+        </div>
+    </div>
+
+    <div class="modal city-modal" id="cityModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.4099 12.0002L17.7099 7.71019C17.8982 7.52188 18.004 7.26649 18.004 7.00019C18.004 6.73388 17.8982 6.47849 17.7099 6.29019C17.5216 6.10188 17.2662 5.99609 16.9999 5.99609C16.7336 5.99609 16.4782 6.10188 16.2899 6.29019L11.9999 10.5902L7.70994 6.29019C7.52164 6.10188 7.26624 5.99609 6.99994 5.99609C6.73364 5.99609 6.47824 6.10188 6.28994 6.29019C6.10164 6.47849 5.99585 6.73388 5.99585 7.00019C5.99585 7.26649 6.10164 7.52188 6.28994 7.71019L10.5899 12.0002L6.28994 16.2902C6.19621 16.3831 6.12182 16.4937 6.07105 16.6156C6.02028 16.7375 5.99414 16.8682 5.99414 17.0002C5.99414 17.1322 6.02028 17.2629 6.07105 17.3848C6.12182 17.5066 6.19621 17.6172 6.28994 17.7102C6.3829 17.8039 6.4935 17.8783 6.61536 17.9291C6.73722 17.9798 6.86793 18.006 6.99994 18.006C7.13195 18.006 7.26266 17.9798 7.38452 17.9291C7.50638 17.8783 7.61698 17.8039 7.70994 17.7102L11.9999 13.4102L16.2899 17.7102C16.3829 17.8039 16.4935 17.8783 16.6154 17.9291C16.7372 17.9798 16.8679 18.006 16.9999 18.006C17.132 18.006 17.2627 17.9798 17.3845 17.9291C17.5064 17.8783 17.617 17.8039 17.7099 17.7102C17.8037 17.6172 17.8781 17.5066 17.9288 17.3848C17.9796 17.2629 18.0057 17.1322 18.0057 17.0002C18.0057 16.8682 17.9796 16.7375 17.9288 16.6156C17.8781 16.4937 17.8037 16.3831 17.7099 16.2902L13.4099 12.0002Z" fill="#ED1F26" />
+                </svg>
+            </button>
+            <div class="h2">
+                <span>Выбор</span> города
+            </div>
+            <div class="modal__cities">
+                <a href="" class="city-item"><span>Ангарск</span></a>
+                <a href="" class="city-item"><span>Братск</span></a>
+                <a href="" class="city-item"><span>Вихоревка</span></a>
+                <a href="" class="city-item"><span>Железногорск-Илимский</span></a>
+                <a href="" class="city-item"><span>Залари</span></a>
+                <a href="" class="city-item"><span>Зима</span></a>
+                <a href="" class="city-item _active"><span>Иркутск</span></a>
+                <a href="" class="city-item"><span>Нижнеудинск</span></a>
+                <a href="" class="city-item"><span>Саянск</span></a>
+                <a href="" class="city-item"><span>Свирск</span></a>
+                <a href="" class="city-item"><span>Слюдянка</span></a>
+                <a href="" class="city-item"><span>Тайшет</span></a>
+                <a href="" class="city-item"><span>Тулун</span></a>
+                <a href="" class="city-item"><span>Улан-Удэ</span></a>
+                <a href="" class="city-item"><span>Усолье-Сибирское</span></a>
+                <a href="" class="city-item"><span>Усть-Илимск</span></a>
+                <a href="" class="city-item"><span>Усть-Ордынский</span></a>
+                <a href="" class="city-item"><span>Черемхово</span></a>
+                <a href="" class="city-item"><span>Шелехов</span></a>
+                <a href="" class="city-item"><span>Хомутово</span></a>
+                <a href="" class="city-item"><span>Качуг</span></a>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
